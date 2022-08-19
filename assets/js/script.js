@@ -234,3 +234,13 @@ function handleSubmit(event) {
   calculateTotal();
 
 }
+
+/**
+ * Clicking the clear form button will also hide the results div.
+ */
+ function hideResults() {
+
+  let resultsDiv = document.getElementById('results');
+  resultsDiv.style.display = "none";
+
+}
