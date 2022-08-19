@@ -213,7 +213,7 @@ function calculateTotal() {
   //adds hours and owed overtime, subtracts week 3 and 4 overtime, multiplies by wage.
   let thisPay = ((totalHours + owedOvertimeHours - nextPayOvertime) * wage).toFixed(2);
   //adds overtime for week 3 and week 4, multiplies by wage.
-  let nextPay = ((calcuateOvertime('week3') + calcuateOvertime('week4')) * wage).toFixed(2);
+  let nextPay = ((calculateOvertime('week3') + calculateOvertime('week4')) * wage).toFixed(2);
 
   //populates relevant spans in results.
   let hoursSpan = document.getElementById('hours-worked');
