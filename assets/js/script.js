@@ -23,6 +23,7 @@ function populateCalendar() {
   let payday = '';
   let nextPayday = '';
 
+  //if statement to correctly populate calendar and dates.
   if (payPeriodValue == '202201') {
     selectedPeriod = period202201;
     weekNumbers = [51, 52, 1, 2];
@@ -74,5 +75,12 @@ function populateCalendar() {
     payday = '22nd September';
     nextPayday = '20th October';
   }
+
+  //populates empty calendar with correct dates from array into <span class="date">.
+  let dates = document.getElementsByClassName('date');
+  for (let i = 0; i < dates.length; i++) {
+    dates[i].innerHTML = selectedPeriod[i] + dateSuffix(selectedPeriod[i]);
+  }
+
 
 }
