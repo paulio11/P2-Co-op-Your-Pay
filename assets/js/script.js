@@ -153,7 +153,7 @@ function addWeek(week) {
     //if NaN/empty it skips the day but continues loop.
     if (isNaN(parseFloat(thisWeekHoursArray[i]))) {
       continue;
-    } 
+    }
     //checks if shift is longer than 7.5 hours.
     else if (parseFloat(thisWeekHoursArray[i]) >= 7.5) {
       //removes 0.5 hours unpaid break.
@@ -210,5 +210,23 @@ function calculateTotal() {
   estimatedSpan.innerHTML = '£' + thisPay;
   let overtimeSpan = document.getElementById('next-overtime');
   overtimeSpan.innerHTML = '£' + nextPay;
+
+}
+
+/**
+ * Intercepts submission of form.
+ */
+function handleSubmit(event) {
+
+  event.preventDefault();
+  populateCalendar();
+
+  let resultsDiv = document.getElementById('results');
+  //unhides results div.
+  resultsDiv.style.display = "block";
+  //scrolls down to results
+  location.href = "#results";
+
+  calculateTotal();
 
 }
