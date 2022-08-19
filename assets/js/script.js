@@ -12,6 +12,10 @@ payForm.addEventListener('submit', handleSubmit);
 let clearBtn = document.getElementById('clear-btn');
 clearBtn.addEventListener('click', hideResults);
 
+//add event listener to test button > run fillForm.
+let testBtn = document.getElementById('test-data');
+testBtn.addEventListener('click', fillForm);
+
 /**
  * Populates calendar with dates and week numbers based on selected pay period.
  */
