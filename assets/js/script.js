@@ -129,4 +129,8 @@ function getWage() {
     wage = 9.90;
   }
 
+  //populates results with correct wage to two decimal places.
+  let wageSpan = document.getElementById('your-wage');
+  wageSpan.innerHTML = '£' + wage.toFixed(2);
+
 }
