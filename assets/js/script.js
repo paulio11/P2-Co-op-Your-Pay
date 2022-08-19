@@ -23,7 +23,7 @@ function populateCalendar() {
   let payday = '';
   let nextPayday = '';
 
-  //if statement to correctly populate calendar and dates.
+  //if statement to set correct variables for calendar and dates.
   if (payPeriodValue == '202201') {
     selectedPeriod = period202201;
     weekNumbers = [51, 52, 1, 2];
@@ -87,5 +87,11 @@ function populateCalendar() {
   for (let i = 0; i < weeks.length; i++) {
     weeks[i].innerHTML = weekNumbers[i];
   }
+
+  //populates results with payday and next payday dates.
+  let paydaySpan = document.getElementById('payday');
+  paydaySpan.innerHTML = payday;
+  let nextPaydaySpan = document.getElementById('next-payday');
+  nextPaydaySpan.innerHTML = nextPayday;
 
 }
