@@ -8,6 +8,10 @@ document.getElementById('pay-period').addEventListener('change', populateCalenda
 let payForm = document.getElementById('pay-form');
 payForm.addEventListener('submit', handleSubmit);
 
+//add event listener to form clear button > run hideResults.
+let clearBtn = document.getElementById('clear-btn');
+clearBtn.addEventListener('click', hideResults);
+
 /**
  * Populates calendar with dates and week numbers based on selected pay period.
  */
