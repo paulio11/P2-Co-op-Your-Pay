@@ -248,3 +248,34 @@ function handleSubmit(event) {
   resultsDiv.style.display = "none";
 
 }
+
+/**
+ * Temporay function, fill form with data for testing.
+ */
+function fillForm() {
+
+  document.getElementById('tl').checked = true;
+  document.getElementById('london').checked = true;
+  document.getElementById('contract-hours').value = 16;
+  document.getElementById('holiday-hours').value = 8;
+  document.getElementById('owed-overtime').value = 172.53
+  document.getElementsByClassName('hours')[0].value = 8;
+  document.getElementsByClassName('hours')[2].value = 8;
+  document.getElementsByClassName('hours')[3].value = 7;
+  document.getElementsByClassName('hours')[4].value = 9;
+  document.getElementsByClassName('hours')[6].value = 8;
+  document.getElementsByClassName('hours')[7].value = 8;
+  document.getElementsByClassName('hours')[8].value = 10;
+  document.getElementsByClassName('hours')[11].value = 8;
+  document.getElementsByClassName('hours')[12].value = 6;
+  document.getElementsByClassName('hours')[13].value = 6;
+  document.getElementsByClassName('hours')[15].value = 8;
+  document.getElementsByClassName('hours')[16].value = 10;
+  document.getElementsByClassName('hours')[17].value = 8;
+  document.getElementsByClassName('hours')[19].value = 8;
+  document.getElementsByClassName('hours')[20].value = 7;
+  document.getElementsByClassName('hours')[21].value = 7;
+  document.getElementsByClassName('hours')[24].value = 8;
+  document.getElementsByClassName('hours')[27].value = 8;  
+
+}
