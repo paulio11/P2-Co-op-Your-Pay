@@ -161,3 +161,14 @@ function addWeek(week) {
   return thisWeeksSum;
 
 }
+
+/**
+ * Calculates and returns overtime hours using output from addWeek() and contract hours form input.
+ */
+function calculateOvertime() {
+
+  var contractHours = document.getElementById('contract-hours').value;
+  let hoursWorked = addWeek(week);
+  let overtime = 0;
+
+}
