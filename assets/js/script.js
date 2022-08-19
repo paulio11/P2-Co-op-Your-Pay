@@ -82,5 +82,10 @@ function populateCalendar() {
     dates[i].innerHTML = selectedPeriod[i] + dateSuffix(selectedPeriod[i]);
   }
 
+  //populates weeks with correcnt numbers from array into <span class="week-number">.
+  let weeks = document.getElementsByClassName('week-number');
+  for (let i = 0; i < weeks.length; i++) {
+    weeks[i].innerHTML = weekNumbers[i];
+  }
 
 }
