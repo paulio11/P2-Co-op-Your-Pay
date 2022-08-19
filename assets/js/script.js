@@ -76,6 +76,15 @@ function populateCalendar() {
     nextPayday = '20th October';
   }
 
+  //looks at last digit of date number and adds correct suffix to the string.
+  const dateSuffix = (date) => {
+    var lastDigit = date.toString().slice(-1);
+    if (lastDigit == '1') return 'st';
+    if (lastDigit == '2') return 'nd';
+    if (lastDigit == '3') return 'rd';
+    return 'th';
+  }
+
   //populates empty calendar with correct dates from array into <span class="date">.
   let dates = document.getElementsByClassName('date');
   for (let i = 0; i < dates.length; i++) {
