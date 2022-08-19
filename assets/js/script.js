@@ -165,10 +165,33 @@ function addWeek(week) {
 /**
  * Calculates and returns overtime hours using output from addWeek() and contract hours form input.
  */
-function calculateOvertime() {
+function calculateOvertime(week) {
 
   var contractHours = document.getElementById('contract-hours').value;
   let hoursWorked = addWeek(week);
   let overtime = 0;
+
+  //if the hours worked (from addWeek) is greater than contract hours then overtime.
+  if (hoursWorked >= contractHours) {
+    overtime = hoursWorked - contractHours;
+  }
+
+  return overtime;
+
+}
+
+/**
+ * Calculates total pay from above functions and form inputs. 
+ */
+function calculateTotal() {
+
+  var wage = getWage();
+  var holidayHours = parseInt(document.getElementById('holiday-hours').value);
+  var owedOvertimeHours = (parseInt(document.getElementById('owed-overtime').value)) / wage;
+  let totalHours = addWeek('week1') + addWeek('week2') + addWeek('week3') + addWeek('week4') + holidayHours;
+  let nextPayOvertime = calcuateOvertime('week3') + calcuateOvertime('week4');
+  let thisPay = ((totalHours + owedOvertimeHours - nextPayOvertime) * wage).toFixed(2);
+  let nextPay = ((calcuateOvertime('week3') + calcuateOvertime('week4')) * wage).toFixed(2);
+
 
 }
