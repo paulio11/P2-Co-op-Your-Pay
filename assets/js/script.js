@@ -147,4 +147,17 @@ function addWeek(week) {
   let thisWeekHoursArray = [];
   let thisWeeksSum = 0;
 
+  //for loop that looks at each <span class="hours"> in a week and pushes to array then adds to return thisWeeksSum.
+  for (let i = 0; i < 7; i++) {
+    thisWeekHoursArray.push(thisWeekHours[i].value);
+    if (isNaN(parseFloat(thisWeekHoursArray[i]))) { //if NaN/empty it skips the day but continues loop.
+      continue;
+    } else if (parseFloat(thisWeekHoursArray[i]) >= 7.5) { //checks if shift is longer than 7.5 hours.
+      thisWeekHoursArray[i] = thisWeekHoursArray[i] - 0.5; //removes 0.5 hours unpaid break.
+    }
+    thisWeeksSum = thisWeeksSum + parseFloat(thisWeekHoursArray[i]); //each new number in array is added to thisWeeksSum.
+  }
+
+  return thisWeeksSum;
+
 }
