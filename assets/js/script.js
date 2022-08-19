@@ -17,4 +17,12 @@ function populateCalendar() {
   const period202209 = [31, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]; //31 July 2022 - 27 August 2022
   const period202210 = [28, 29, 30, 31, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24] //28 August 2022 - 24 September 2022
 
+  let payPeriodValue = document.getElementById('pay-period').value;
+  let selectedPeriod = [];
+  let weekNumbers = [];
+  let payday = '';
+  let nextPayday = '';
+
+  
+
 }
