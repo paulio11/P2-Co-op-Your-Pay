@@ -1,4 +1,7 @@
+//populates calendar on page load.
 window.onload = populateCalendar();
+
+//populates calendar again if form input is changed.
 document.getElementById('pay-period').addEventListener('change', populateCalendar);
 
 /**
@@ -102,5 +105,17 @@ function populateCalendar() {
   paydaySpan.innerHTML = payday;
   let nextPaydaySpan = document.getElementById('next-payday');
   nextPaydaySpan.innerHTML = nextPayday;
+
+}
+
+/**
+ * Gets and returns correct wage from the values of job role and london location html inputs.
+ */
+function getWage() {
+
+  let wage = 0;
+  let london = false;
+  let tl = document.getElementById('tl').checked;
+  let ctm = document.getElementById('ctm').checked;
 
 }
