@@ -4,6 +4,10 @@ window.onload = populateCalendar();
 //populates calendar again if form input is changed.
 document.getElementById('pay-period').addEventListener('change', populateCalendar);
 
+//add event listener to form submit button -> run handleSubmit.
+let payForm = document.getElementById('pay-form');
+payForm.addEventListener('submit', handleSubmit);
+
 /**
  * Populates calendar with dates and week numbers based on selected pay period.
  */
