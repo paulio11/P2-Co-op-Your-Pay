@@ -203,5 +203,12 @@ function calculateTotal() {
   //adds overtime for week 3 and week 4, multiplies by wage.
   let nextPay = ((calcuateOvertime('week3') + calcuateOvertime('week4')) * wage).toFixed(2);
 
+  //populates relevant spans in results.
+  let hoursSpan = document.getElementById('hours-worked');
+  hoursSpan.innerHTML = totalHours;
+  let estimatedSpan = document.getElementById('estimated-pay');
+  estimatedSpan.innerHTML = '£' + thisPay;
+  let overtimeSpan = document.getElementById('next-overtime');
+  overtimeSpan.innerHTML = '£' + nextPay;
 
 }
