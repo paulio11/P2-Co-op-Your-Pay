@@ -118,4 +118,8 @@ function getWage() {
   let tl = document.getElementById('tl').checked;
   let ctm = document.getElementById('ctm').checked;
 
+  if (document.getElementById('london').checked) {
+    london = true;
+  }
+
 }
