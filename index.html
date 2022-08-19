@@ -18,13 +18,43 @@
     <div id="instructions">
       Instructions
     </div>
-    <form action="">
+    <form id="pay-form">
       <div id="form-inputs">
-        Form inputs
+        <label for="pay-period">Pay Period</label>
+        <select name="pay-period" id="pay-period" required>
+          <option value="202201">19 December 2021 - 15 January 2022</option>
+          <option value="202202">16 January 2022 - 12 February 2022</option>
+          <option value="202203">13 February 2022 - 12 March 2022</option>
+          <option value="202204">13 March 2022- 9 April 2022</option>
+          <option value="202205">10 April 2022 - 7 May 2022</option>
+          <option value="202206">8 May 2022 - 4 June 2022</option>
+          <option value="202207">5 June 2022 - 2 July 2022</option>
+          <option value="202208">3 July 2022 - 30 July 2022</option>
+          <option value="202209">31 July 2022 - 27 August 2022</option>
+          <option value="202210">28 August 2022 - 24 September 2022</option>
+        </select>
+        <br>
+        <span>Job Role</span>
+        <input type="radio" name="role" id="tl" required>
+        <label for="role-tl">Team Leader</label>
+        <input type="radio" name="role" id="ctm" required>
+        <label for="role-ctm">Customer Team Member</label>
+        <br>
+        <label for="london">London based</label>
+        <input type="checkbox" name="london" id="london">
+        <br>
+        <label for="contract-hours">Contract Hours</label>
+        <input type="number" name="contract-hours" id="contract-hours" min="0" max="168" value="0" required>
+        <br>
+        <label for="holiday-hours">Holiday Hours Used</label>
+        <input type="number" name="holiday-hours" id="holiday-hours" value=0 required>
+        <br>
+        <label for="owed-overtime">Owed Overtime (from previous pay period) £</label>
+        <input type="number" name="owed-overtime" id="owed-overtime" value=0 min="0" step=".01" required>
       </div>
       <div id="calendar">
         <div class="week">
-          <h3>Week 1</h3>
+          <h3>Week</h3>
         </div>
         <div class="week">
           <h3>Week</h3>
@@ -37,9 +67,9 @@
         </div>
       </div>
       <div id="buttons">
-        <button></button>
-        <button></button>
-        <button></button>
+        <button>Test data</button>
+        <button>Clear Form</button>
+        <button>Calculate Pay</button>
       </div>
       <div id="results">
         Results
