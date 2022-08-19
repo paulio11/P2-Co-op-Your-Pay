@@ -114,12 +114,19 @@ function populateCalendar() {
 function getWage() {
 
   let wage = 0;
-  let london = false;
   let tl = document.getElementById('tl').checked;
   let ctm = document.getElementById('ctm').checked;
+  let london = document.getElementById('london').checked;
 
-  if (document.getElementById('london').checked) {
-    london = true;
+  //if statement to set correct value to wage.
+  if (tl && london) {
+    wage = 12.35;
+  } else if (tl) {
+    wage = 11.00;
+  } else if (ctm && london) {
+    wage = 11.25;
+  } else if (ctm) {
+    wage = 9.90;
   }
 
 }
