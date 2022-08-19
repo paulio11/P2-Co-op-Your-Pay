@@ -40,14 +40,14 @@
         <input type="radio" name="role" id="ctm" required>
         <label for="role-ctm">Customer Team Member</label>
         <br>
-        <label for="london">London based</label>
+        <label for="london">London store</label>
         <input type="checkbox" name="london" id="london">
         <br>
         <label for="contract-hours">Contract Hours</label>
-        <input type="number" name="contract-hours" id="contract-hours" min="0" max="168" value="0" required>
+        <input type="number" name="contract-hours" id="contract-hours" min="0" max="168" value="0" step=".01" required>
         <br>
         <label for="holiday-hours">Holiday Hours Used</label>
-        <input type="number" name="holiday-hours" id="holiday-hours" value=0 required>
+        <input type="number" name="holiday-hours" id="holiday-hours" value=0 step=".01" required>
         <br>
         <label for="owed-overtime">Owed Overtime (from previous pay period) £</label>
         <input type="number" name="owed-overtime" id="owed-overtime" value=0 min="0" step=".01" required>
@@ -55,15 +55,151 @@
       <div id="calendar">
         <div class="week">
           <h3>Week</h3>
+          <table id="week1">
+            <tr>
+              <th>Date</th>
+              <th>Hours</th>
+            </tr>
+            <tr>
+              <td>Sunday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Monday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Tuesday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Wednesday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Thursday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Friday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Saturday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+          </table>
         </div>
         <div class="week">
           <h3>Week</h3>
+          <table id="week2">
+            <tr>
+              <th>Date</th>
+              <th>Hours</th>
+            </tr>
+            <tr>
+              <td>Sunday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Monday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Tuesday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Wednesday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Thursday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Friday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Saturday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+          </table>
         </div>
         <div class="week">
           <h3>Week</h3>
+          <table id="week3">
+            <tr>
+              <th>Date</th>
+              <th>Hours</th>
+            </tr>
+            <tr>
+              <td>Sunday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Monday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Tuesday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Wednesday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Thursday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Friday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Saturday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+          </table>
         </div>
         <div class="week">
           <h3>Week</h3>
+          <table id="week4">
+            <tr>
+              <th>Date</th>
+              <th>Hours</th>
+            </tr>
+            <tr>
+              <td>Sunday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Monday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Tuesday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Wednesday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Thursday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Friday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+            <tr>
+              <td>Saturday <span class="date"></span></td>
+              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+            </tr>
+          </table>
         </div>
       </div>
       <div id="buttons">
