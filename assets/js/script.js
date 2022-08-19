@@ -150,12 +150,17 @@ function addWeek(week) {
   //for loop that looks at each <span class="hours"> in a week and pushes to array then adds to return thisWeeksSum.
   for (let i = 0; i < 7; i++) {
     thisWeekHoursArray.push(thisWeekHours[i].value);
-    if (isNaN(parseFloat(thisWeekHoursArray[i]))) { //if NaN/empty it skips the day but continues loop.
+    //if NaN/empty it skips the day but continues loop.
+    if (isNaN(parseFloat(thisWeekHoursArray[i]))) {
       continue;
-    } else if (parseFloat(thisWeekHoursArray[i]) >= 7.5) { //checks if shift is longer than 7.5 hours.
-      thisWeekHoursArray[i] = thisWeekHoursArray[i] - 0.5; //removes 0.5 hours unpaid break.
+    } 
+    //checks if shift is longer than 7.5 hours.
+    else if (parseFloat(thisWeekHoursArray[i]) >= 7.5) {
+      //removes 0.5 hours unpaid break.
+      thisWeekHoursArray[i] = thisWeekHoursArray[i] - 0.5;
     }
-    thisWeeksSum = thisWeeksSum + parseFloat(thisWeekHoursArray[i]); //each new number in array is added to thisWeeksSum.
+    //each new number in array is added to thisWeeksSum.
+    thisWeeksSum = thisWeeksSum + parseFloat(thisWeekHoursArray[i]);
   }
 
   return thisWeeksSum;
@@ -187,10 +192,15 @@ function calculateTotal() {
 
   var wage = getWage();
   var holidayHours = parseInt(document.getElementById('holiday-hours').value);
+  //overtime is in money, so divide by wage to get hours.
   var owedOvertimeHours = (parseInt(document.getElementById('owed-overtime').value)) / wage;
+  //adds the result of addWeek for each of the 4 weeks and holiday hours.
   let totalHours = addWeek('week1') + addWeek('week2') + addWeek('week3') + addWeek('week4') + holidayHours;
-  let nextPayOvertime = calcuateOvertime('week3') + calcuateOvertime('week4');
+  //adds overtime for week 3 and week 4
+  let nextPayOvertime = calculateOvertime('week3') + calculateOvertime('week4');
+  //adds hours and owed overtime, subtracts week 3 and 4 overtime, multiplies by wage.
   let thisPay = ((totalHours + owedOvertimeHours - nextPayOvertime) * wage).toFixed(2);
+  //adds overtime for week 3 and week 4, multiplies by wage.
   let nextPay = ((calcuateOvertime('week3') + calcuateOvertime('week4')) * wage).toFixed(2);
 
 
