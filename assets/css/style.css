@@ -1,3 +1,7 @@
+#results {
+  display: none;
+}
+
 .results {
   font-weight: bold;
 }
