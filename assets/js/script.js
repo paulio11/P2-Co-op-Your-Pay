@@ -133,4 +133,18 @@ function getWage() {
   let wageSpan = document.getElementById('your-wage');
   wageSpan.innerHTML = '£' + wage.toFixed(2);
 
+  return wage;
+
+}
+
+/**
+ * Adds up hours from form input for a week.
+ */
+function addWeek(week) {
+
+  let thisWeek = document.getElementById(week)
+  let thisWeekHours = thisWeek.getElementsByClassName('hours');
+  let thisWeekHoursArray = [];
+  let thisWeeksSum = 0;
+
 }
