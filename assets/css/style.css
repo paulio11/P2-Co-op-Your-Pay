@@ -106,3 +106,18 @@ input[type=number] {
 .about-box {
   min-width: 45%;
 }
+
+#calendar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.week {
+  background-color: #6285b4;
+  padding: 16px;
+  border-radius: 4px;
+  color: white;
+  width: 100%;
+}
