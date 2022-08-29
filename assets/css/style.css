@@ -41,6 +41,7 @@ a {
 header,
 footer {
   padding: 16px 32px;
+  height: 64px;
 }
 
 header {
@@ -57,7 +58,7 @@ footer {
   height: 32px;
 }
 
-@media screen and (max-width:300px) {
+@media screen and (max-width:330px) {
 
   #logo {
     display: none;
@@ -65,7 +66,7 @@ footer {
   
 }
 
-header span {
+.spaced {
   margin-left: 32px;
 }
 
@@ -77,10 +78,6 @@ header span {
 #user-menu i {
   font-size: 20px;
   margin-left: 8px;
-}
-
-#name-span {
-  margin-left: 0;
 }
 
 #menu-button {
