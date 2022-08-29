@@ -21,7 +21,7 @@
   </header>
   <div id="background">
     <div id="main-content">
-      <h1>Pay Day Caluclator</h1>
+      <h1>Pay Day Calculator</h1>
       <div id="instructions" class="box">
         <p>If you're a Co-op colleague you're paid every 4 weeks - these are called "pay periods". You will get a
           payslip on <a href="https://colleagues.coop.co.uk/myhr" target="_blank">MyHR</a> for each pay period.</p>
@@ -232,22 +232,22 @@
           <button type="reset" id="clear-btn">Reset</button>
           <button type="submit">Calculate Pay</button>
         </div>
+        <div id="results" class="box">
+          <h2>Results</h2>
+          <p>Hourly Rate: <span id="your-wage" class="results"></span></p>
+          <p>Hours worked this pay period: <span id="hours-worked" class="results"></span></p>
+          <p>When you will get paid: <span id="payday" class="results"></span></p>
+          <p>Estimated pay: <span id="estimated-pay" class="results"></span> (before deductions)</p>
+          <p>Overtime being paid on <span id="next-payday"></span>: <span id="next-overtime" class="results"></span></p>
+        </div>
       </form>
-      <div id="results" class="box">
-        <h2>Results</h2>
-        <p>Hourly Rate: <span id="your-wage" class="results"></span></p>
-        <p>Hours worked this pay period: <span id="hours-worked" class="results"></span></p>
-        <p>When you will get paid: <span id="payday" class="results"></span></p>
-        <p>Estimated pay: <span id="estimated-pay" class="results"></span> (before deductions)</p>
-        <p>Overtime being paid on <span id="next-payday"></span>: <span id="next-overtime" class="results"></span></p>
-      </div>
     </div>
   </div>
   <footer>
-    Footer
+    <span>Pay Day Calculator by Paul Young</span>
   </footer>
   <script src="https://kit.fontawesome.com/9446ef5fe5.js" crossorigin="anonymous"></script>
-  <script src="assets/js/script.js"></script>
+  <script src="assets/js/calculator.js"></script>
 </body>
 
 </html>
