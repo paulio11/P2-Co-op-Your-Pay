@@ -35,3 +35,19 @@ function closeSidebar() {
   sidebarMenu.classList.remove('sidebar-open');
 
 }
+
+//just for fun!
+let helloEmployee = document.getElementById('user-name');
+helloEmployee.addEventListener('click', addName);
+
+/**
+ * popup prompt to ask name, then change span html.
+ */
+function addName() {
+
+  var name = prompt('What is your name?');
+
+  let nameSpan = document.getElementById('name-span');
+  nameSpan.innerHTML = name;
+
+}
