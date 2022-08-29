@@ -75,6 +75,11 @@ header span {
 
 #sidebar-container {
   background-color: rgba(20, 20, 20, 0.7);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
 }
 
 .sidebar {
@@ -86,6 +91,19 @@ header span {
   float: right;
 }
 
+#close-menu {
+  display: block;
+  float: right;
+  padding: 16px;
+  font-size: 16px;
+}
+
+.nav-heading {
+  margin: 16px 0 32px 0;
+  font-size: 32px;
+  clear: right;
+}
+
 .sidebar ul {
   list-style: none;
 }
@@ -94,7 +112,7 @@ header span {
   width: 100%;
   padding: 16px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: bold;
 }
 
@@ -104,6 +122,7 @@ header span {
 
 .active-nav {
   border-left: 4px solid white;
+  padding-left: 12px !important;
 }
 
 /* main content */
