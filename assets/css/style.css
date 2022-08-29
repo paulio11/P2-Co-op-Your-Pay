@@ -65,3 +65,15 @@ header span {
   font-size: 20px;
   margin-left: 8px;
 }
+
+/* main content */
+
+#background {
+  background: linear-gradient(180deg, #326bb7 120px, #326bb7 120px, white 120px);
+  flex-grow: 1;
+}
+
+#main-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
