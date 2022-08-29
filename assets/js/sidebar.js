@@ -16,6 +16,6 @@ function openSidebar() {
 function closeSidebar() {
   
   sidebarContainer.style.display = 'none';
-  document.body.style.overflow = 'scroll';
+  document.body.style.overflow = 'initial';
 
 }
