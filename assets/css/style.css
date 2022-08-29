@@ -191,3 +191,13 @@ button:active {
     color: white;
   }
 }
+
+/* results div */
+
+#results {
+  display: none;
+}
+
+.results {
+  font-weight: bold;
+}
