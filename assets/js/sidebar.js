@@ -5,6 +5,7 @@ let closeMenu = document.getElementById('close-menu');
 closeMenu.addEventListener('click', closeSidebar);
 
 let sidebarContainer = document.getElementById('sidebar-container');
+let sidebarMenu = document.getElementById('sidebar');
 
 function openSidebar() {  
 
