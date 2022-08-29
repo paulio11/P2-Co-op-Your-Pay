@@ -121,3 +121,15 @@ input[type=number] {
   color: white;
   width: 100%;
 }
+
+@media screen and (min-width:500px) {
+  .week {
+    width: 48%;
+  }
+}
+
+@media screen and (min-width:875px) {
+  .week {
+    width: 23.5%;
+  }
+}
