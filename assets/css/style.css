@@ -57,7 +57,7 @@ footer {
   height: 32px;
 }
 
-@media screen and (min-width:300px) {
+@media screen and (max-width:300px) {
 
   #logo {
     display: none;
