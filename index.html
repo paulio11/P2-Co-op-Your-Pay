@@ -19,215 +19,219 @@
       <i class="fa-solid fa-bars"></i>
     </div>
   </header>
-  <div id="main-content">
-    <h1>Pay Day Caluclator</h1>
-    <div id="instructions" class="box">
-      <p>If you're a Co-op colleague you're paid every 4 weeks - these are called "pay periods". You will get a
-        payslip on <a href="https://colleagues.coop.co.uk/myhr" target="_blank">MyHR</a> for each pay period.</p>
-      <br>
-      <p>Use this page to help calculate the pay you will recieve. Enter your details below and select the relevant
-        pay period.</p>
-      <br>
-      <p><a href="#" id="test-data">Fill form with test data</a></p>
+  <div id="background">
+    <div id="main-content">
+      <h1>Pay Day Caluclator</h1>
+      <div id="instructions" class="box">
+        <p>If you're a Co-op colleague you're paid every 4 weeks - these are called "pay periods". You will get a
+          payslip on <a href="https://colleagues.coop.co.uk/myhr" target="_blank">MyHR</a> for each pay period.</p>
+        <br>
+        <p>Use this page to help calculate the pay you will recieve. Enter your details below and select the relevant
+          pay period.</p>
+        <br>
+        <p><a href="#" id="test-data">Fill form with test data</a></p>
+      </div>
+      <form id="pay-form">
+        <div id="form-inputs">
+          <label for="pay-period">Pay Period</label>
+          <select name="pay-period" id="pay-period" required>
+            <option value="202201">19 December 2021 - 15 January 2022</option>
+            <option value="202202">16 January 2022 - 12 February 2022</option>
+            <option value="202203">13 February 2022 - 12 March 2022</option>
+            <option value="202204">13 March 2022- 9 April 2022</option>
+            <option value="202205">10 April 2022 - 7 May 2022</option>
+            <option value="202206">8 May 2022 - 4 June 2022</option>
+            <option value="202207">5 June 2022 - 2 July 2022</option>
+            <option value="202208">3 July 2022 - 30 July 2022</option>
+            <option value="202209">31 July 2022 - 27 August 2022</option>
+            <option value="202210">28 August 2022 - 24 September 2022</option>
+          </select>
+          <br>
+          <span>Job Role</span>
+          <input type="radio" name="role" id="tl" required>
+          <label for="role-tl">Team Leader</label>
+          <input type="radio" name="role" id="ctm" required>
+          <label for="role-ctm">Customer Team Member</label>
+          <br>
+          <label for="london">London store</label>
+          <input type="checkbox" name="london" id="london">
+          <br>
+          <label for="contract-hours">Contract Hours</label>
+          <input type="number" name="contract-hours" id="contract-hours" min="0" max="168" value="0" step=".01"
+            required>
+          <br>
+          <label for="holiday-hours">Holiday Hours Used</label>
+          <input type="number" name="holiday-hours" id="holiday-hours" value=0 step=".01" required>
+          <br>
+          <label for="owed-overtime">Owed Overtime (from previous pay period) £</label>
+          <input type="number" name="owed-overtime" id="owed-overtime" value=0 min="0" step=".01" required>
+        </div>
+        <div id="calendar">
+          <div class="week">
+            <h3>Week <span class="week-number"></span></h3>
+            <table id="week1">
+              <tr>
+                <th>Date</th>
+                <th>Hours</th>
+              </tr>
+              <tr>
+                <td>Sunday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Monday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Tuesday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Wednesday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Thursday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Friday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Saturday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+            </table>
+          </div>
+          <div class="week">
+            <h3>Week <span class="week-number"></span></h3>
+            <table id="week2">
+              <tr>
+                <th>Date</th>
+                <th>Hours</th>
+              </tr>
+              <tr>
+                <td>Sunday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Monday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Tuesday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Wednesday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Thursday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Friday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Saturday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+            </table>
+          </div>
+          <div class="week">
+            <h3>Week <span class="week-number"></span></h3>
+            <table id="week3">
+              <tr>
+                <th>Date</th>
+                <th>Hours</th>
+              </tr>
+              <tr>
+                <td>Sunday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Monday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Tuesday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Wednesday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Thursday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Friday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Saturday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+            </table>
+          </div>
+          <div class="week">
+            <h3>Week <span class="week-number"></span></h3>
+            <table id="week4">
+              <tr>
+                <th>Date</th>
+                <th>Hours</th>
+              </tr>
+              <tr>
+                <td>Sunday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Monday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Tuesday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Wednesday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Thursday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Friday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+              <tr>
+                <td>Saturday <span class="date"></span></td>
+                <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div id="buttons">
+          <button id="test-data">Test data</button>
+          <button type="reset" id="clear-btn">Clear Form</button>
+          <button type="submit">Calculate Pay</button>
+        </div>
+        <div id="results">
+          <h2>Results</h2>
+          <p>Hourly Rate: <span id="your-wage" class="results"></span></p>
+          <p>Hours worked this pay period: <span id="hours-worked" class="results"></span></p>
+          <p>When you will get paid: <span id="payday" class="results"></span></p>
+          <p>Estimated pay: <span id="estimated-pay" class="results"></span> (before deductions)</p>
+          <p>Overtime being paid on <span id="next-payday" class="results"></span>: <span id="next-overtime"
+              class="results"></span></p>
+        </div>
+      </form>
     </div>
-    <form id="pay-form">
-      <div id="form-inputs">
-        <label for="pay-period">Pay Period</label>
-        <select name="pay-period" id="pay-period" required>
-          <option value="202201">19 December 2021 - 15 January 2022</option>
-          <option value="202202">16 January 2022 - 12 February 2022</option>
-          <option value="202203">13 February 2022 - 12 March 2022</option>
-          <option value="202204">13 March 2022- 9 April 2022</option>
-          <option value="202205">10 April 2022 - 7 May 2022</option>
-          <option value="202206">8 May 2022 - 4 June 2022</option>
-          <option value="202207">5 June 2022 - 2 July 2022</option>
-          <option value="202208">3 July 2022 - 30 July 2022</option>
-          <option value="202209">31 July 2022 - 27 August 2022</option>
-          <option value="202210">28 August 2022 - 24 September 2022</option>
-        </select>
-        <br>
-        <span>Job Role</span>
-        <input type="radio" name="role" id="tl" required>
-        <label for="role-tl">Team Leader</label>
-        <input type="radio" name="role" id="ctm" required>
-        <label for="role-ctm">Customer Team Member</label>
-        <br>
-        <label for="london">London store</label>
-        <input type="checkbox" name="london" id="london">
-        <br>
-        <label for="contract-hours">Contract Hours</label>
-        <input type="number" name="contract-hours" id="contract-hours" min="0" max="168" value="0" step=".01" required>
-        <br>
-        <label for="holiday-hours">Holiday Hours Used</label>
-        <input type="number" name="holiday-hours" id="holiday-hours" value=0 step=".01" required>
-        <br>
-        <label for="owed-overtime">Owed Overtime (from previous pay period) £</label>
-        <input type="number" name="owed-overtime" id="owed-overtime" value=0 min="0" step=".01" required>
-      </div>
-      <div id="calendar">
-        <div class="week">
-          <h3>Week <span class="week-number"></span></h3>
-          <table id="week1">
-            <tr>
-              <th>Date</th>
-              <th>Hours</th>
-            </tr>
-            <tr>
-              <td>Sunday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Monday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Tuesday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Wednesday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Thursday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Friday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Saturday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-          </table>
-        </div>
-        <div class="week">
-          <h3>Week <span class="week-number"></span></h3>
-          <table id="week2">
-            <tr>
-              <th>Date</th>
-              <th>Hours</th>
-            </tr>
-            <tr>
-              <td>Sunday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Monday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Tuesday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Wednesday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Thursday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Friday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Saturday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-          </table>
-        </div>
-        <div class="week">
-          <h3>Week <span class="week-number"></span></h3>
-          <table id="week3">
-            <tr>
-              <th>Date</th>
-              <th>Hours</th>
-            </tr>
-            <tr>
-              <td>Sunday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Monday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Tuesday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Wednesday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Thursday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Friday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Saturday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-          </table>
-        </div>
-        <div class="week">
-          <h3>Week <span class="week-number"></span></h3>
-          <table id="week4">
-            <tr>
-              <th>Date</th>
-              <th>Hours</th>
-            </tr>
-            <tr>
-              <td>Sunday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Monday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Tuesday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Wednesday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Thursday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Friday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-            <tr>
-              <td>Saturday <span class="date"></span></td>
-              <td><input type="number" class="hours" min=0 max=24 step=".25"></input>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <div id="buttons">
-        <button id="test-data">Test data</button>
-        <button type="reset" id="clear-btn">Clear Form</button>
-        <button type="submit">Calculate Pay</button>
-      </div>
-      <div id="results">
-        <h2>Results</h2>
-        <p>Hourly Rate: <span id="your-wage" class="results"></span></p>
-        <p>Hours worked this pay period: <span id="hours-worked" class="results"></span></p>
-        <p>When you will get paid: <span id="payday" class="results"></span></p>
-        <p>Estimated pay: <span id="estimated-pay" class="results"></span> (before deductions)</p>
-        <p>Overtime being paid on <span id="next-payday" class="results"></span>: <span id="next-overtime" class="results"></span></p>
-      </div>
-    </form>
   </div>
   <footer>
     Footer
