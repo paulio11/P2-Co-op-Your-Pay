@@ -19,7 +19,7 @@ testBtn.addEventListener('click', fillForm);
 /**
  * Populates calendar with dates and week numbers based on selected pay period.
  */
- function populateCalendar() {
+function populateCalendar() {
 
   const period202201 = [19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]; //19 December 2021 - 15 January 2022
   const period202202 = [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]; //16 January 2022 - 12 February 2022
@@ -124,11 +124,10 @@ testBtn.addEventListener('click', fillForm);
 
 }
 
-
 /**
  * Gets and returns correct wage from the values of job role and london location html inputs.
  */
- function getWage() {
+function getWage() {
 
   let wage = 0;
   let tl = document.getElementById('tl').checked;
@@ -157,7 +156,7 @@ testBtn.addEventListener('click', fillForm);
 /**
  * Adds up hours from form input for a week.
  */
- function addWeek(week) {
+function addWeek(week) {
 
   let thisWeek = document.getElementById(week)
   let thisWeekHours = thisWeek.getElementsByClassName('hours');
@@ -187,7 +186,7 @@ testBtn.addEventListener('click', fillForm);
 /**
  * Calculates and returns overtime hours using output from addWeek() and contract hours form input.
  */
- function calculateOvertime(week) {
+function calculateOvertime(week) {
 
   var contractHours = document.getElementById('contract-hours').value;
   let hoursWorked = addWeek(week);
@@ -205,7 +204,7 @@ testBtn.addEventListener('click', fillForm);
 /**
  * Calculates total pay from above functions and form inputs. 
  */
- function calculateTotal() {
+function calculateTotal() {
 
   var wage = getWage();
   var holidayHours = parseInt(document.getElementById('holiday-hours').value);
@@ -233,7 +232,7 @@ testBtn.addEventListener('click', fillForm);
 /**
  * Intercepts submission of form.
  */
- function handleSubmit(event) {
+function handleSubmit(event) {
 
   event.preventDefault();
   populateCalendar();
@@ -247,7 +246,6 @@ testBtn.addEventListener('click', fillForm);
   calculateTotal();
 
 }
-
 
 /**
  * Clicking the clear form button will also hide the results div.
