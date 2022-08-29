@@ -73,6 +73,8 @@ header span {
 
 #menu-button {
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 /* sidebar nav */
