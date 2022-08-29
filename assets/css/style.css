@@ -57,6 +57,14 @@ footer {
   height: 32px;
 }
 
+@media screen and (min-width:300px) {
+
+  #logo {
+    display: none;
+  }
+  
+}
+
 header span {
   margin-left: 32px;
 }
