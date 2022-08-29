@@ -20,6 +20,8 @@ body {
   min-height: 100vh;
 }
 
+/* headings */
+
 h1 {
   color: white;
   font-size: 20px;
@@ -32,4 +34,34 @@ h2 {
 
 a {
   color: #326bb7;
+}
+
+/* header and footer */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer {
+  border-top: 1px solid #dfdfdf;
+}
+
+#logo {
+  height: 32px;
+}
+
+header span {
+  margin-left: 32px;
+}
+
+#user-menu {
+  display: flex;
+  align-items: center;
+}
+
+#user-menu i {
+  font-size: 20px;
+  margin-left: 8px;
 }
