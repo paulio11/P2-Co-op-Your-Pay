@@ -142,6 +142,11 @@ header span {
   background-color: #334c89;
 }
 
+#sidebar a {
+  text-decoration: none;
+  color: white;
+}
+
 .active-nav {
   border-left: 4px solid white;
   padding-left: 12px !important;
