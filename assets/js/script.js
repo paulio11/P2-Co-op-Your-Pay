@@ -19,7 +19,7 @@ testBtn.addEventListener('click', fillForm);
 /**
  * Populates calendar with dates and week numbers based on selected pay period.
  */
-function populateCalendar() {
+ function populateCalendar() {
 
   const period202201 = [19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]; //19 December 2021 - 15 January 2022
   const period202202 = [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]; //16 January 2022 - 12 February 2022
@@ -124,10 +124,11 @@ function populateCalendar() {
 
 }
 
+
 /**
  * Gets and returns correct wage from the values of job role and london location html inputs.
  */
-function getWage() {
+ function getWage() {
 
   let wage = 0;
   let tl = document.getElementById('tl').checked;
@@ -156,7 +157,7 @@ function getWage() {
 /**
  * Adds up hours from form input for a week.
  */
-function addWeek(week) {
+ function addWeek(week) {
 
   let thisWeek = document.getElementById(week)
   let thisWeekHours = thisWeek.getElementsByClassName('hours');
@@ -186,7 +187,7 @@ function addWeek(week) {
 /**
  * Calculates and returns overtime hours using output from addWeek() and contract hours form input.
  */
-function calculateOvertime(week) {
+ function calculateOvertime(week) {
 
   var contractHours = document.getElementById('contract-hours').value;
   let hoursWorked = addWeek(week);
@@ -204,7 +205,7 @@ function calculateOvertime(week) {
 /**
  * Calculates total pay from above functions and form inputs. 
  */
-function calculateTotal() {
+ function calculateTotal() {
 
   var wage = getWage();
   var holidayHours = parseInt(document.getElementById('holiday-hours').value);
@@ -232,7 +233,7 @@ function calculateTotal() {
 /**
  * Intercepts submission of form.
  */
-function handleSubmit(event) {
+ function handleSubmit(event) {
 
   event.preventDefault();
   populateCalendar();
@@ -247,6 +248,7 @@ function handleSubmit(event) {
 
 }
 
+
 /**
  * Clicking the clear form button will also hide the results div.
  */
@@ -254,6 +256,8 @@ function handleSubmit(event) {
 
   let resultsDiv = document.getElementById('results');
   resultsDiv.style.display = "none";
+  //scrolls back to top
+  location.href = "#";
 
 }
 
