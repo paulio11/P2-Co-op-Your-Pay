@@ -6,15 +6,16 @@ closeMenu.addEventListener('click', closeSidebar);
 
 let sidebarContainer = document.getElementById('sidebar-container');
 
-
 function openSidebar() {  
 
-  sidebarContainer.style.display = "block";
+  sidebarContainer.style.display = 'block';
+  document.body.style.overflow = 'hidden';
 
 }
 
 function closeSidebar() {
   
-  sidebarContainer.style.display = "none";
+  sidebarContainer.style.display = 'none';
+  document.body.style.overflow = 'scroll';
 
 }
