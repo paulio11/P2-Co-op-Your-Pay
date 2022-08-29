@@ -83,10 +83,9 @@ header span {
   background-color: rgba(20, 20, 20, 0.7);
   z-index: 10;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: -100vh;
+  left: -100vw;
   width: 100vw;
-  display: none;
 }
 
 #sidebar {
@@ -94,18 +93,26 @@ header span {
   width: 300px;
   background-color: #326bb7;
   color: white;
-  position: relative;
   float: right;
+  right: -300px;
+  position: relative;
+  transition: .2s ease-in;
+}
+
+.sidebar-open {
+  transform: translate(-300px, 0);
+}
+
+.sidebar-closed {
+  transform: translate(300px, 0);
 }
 
 #close-menu {
-  display: block;
   float: right;
   padding: 16px;
   font-size: 16px;
   cursor: pointer;
   display: flex;
-  align-items: center;
 }
 
 .x-close {
