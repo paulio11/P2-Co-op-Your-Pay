@@ -73,11 +73,16 @@ footer {
 #user-menu {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 #user-menu i {
   font-size: 20px;
   margin-left: 8px;
+}
+
+#user-name {
+  text-transform: capitalize;
 }
 
 #menu-button {
