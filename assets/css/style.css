@@ -85,3 +85,19 @@ header span {
   padding: 16px;
   background-color: white;
 }
+
+/* pay day calculator form */
+
+#form-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+input[type=number] {
+  width: 60px;
+}
+
+.about-box {
+  min-width: 45%;
+}
