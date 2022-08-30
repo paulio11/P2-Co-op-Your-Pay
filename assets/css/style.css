@@ -60,6 +60,10 @@ footer {
 
 @media screen and (max-width:330px) {
 
+  header {
+    justify-content: flex-end;
+  }
+
   #logo {
     display: none;
   }
