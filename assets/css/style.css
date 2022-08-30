@@ -41,13 +41,13 @@ a {
 header,
 footer {
   padding: 16px 32px;
-  height: 64px;
 }
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 64px;
 }
 
 footer {
