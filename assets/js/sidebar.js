@@ -45,7 +45,7 @@ helloEmployee.addEventListener('click', addName);
  */
 function addName() {
 
-  var name = prompt('What is your name?');
+  var name = prompt('What is your first name?');
 
   let nameSpan = document.getElementById('name-span');
   nameSpan.innerHTML = name;
