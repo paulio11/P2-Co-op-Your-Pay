@@ -286,6 +286,8 @@ function fillForm() {
   document.getElementsByClassName('hours')[20].value = 7;
   document.getElementsByClassName('hours')[21].value = 7;
   document.getElementsByClassName('hours')[24].value = 8;
+  document.getElementsByClassName('hours')[25].value = 6.5;
+  document.getElementsByClassName('hours')[26].value = 9;
   document.getElementsByClassName('hours')[27].value = 8;  
 
 }
