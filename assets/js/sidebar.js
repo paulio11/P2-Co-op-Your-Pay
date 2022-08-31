@@ -1,3 +1,5 @@
+document.getElementById('name-span').innerHTML = localStorage.getItem('firstname');
+
 //add event listener to menu button -> run openSidebar.
 let menuButton = document.getElementById('menu-button');
 menuButton.addEventListener('click', openSidebar);
@@ -36,6 +38,15 @@ function closeSidebar() {
 
 }
 
+
+
+
+
+
+
+
+
+
 //just for fun!
 let helloEmployee = document.getElementById('user-name');
 helloEmployee.addEventListener('click', addName);
@@ -43,11 +54,17 @@ helloEmployee.addEventListener('click', addName);
 /**
  * popup prompt to ask name, then change span html.
  */
+// function addName() {
+
+//   var name = prompt('What is your first name?');
+
+//   let nameSpan = document.getElementById('name-span');
+//   nameSpan.innerHTML = name;
+
+// }
+
 function addName() {
-
-  var name = prompt('What is your first name?');
-
-  let nameSpan = document.getElementById('name-span');
-  nameSpan.innerHTML = name;
-
+  var namePrompt = prompt('What is your first name?');
+  localStorage.setItem('firstname', namePrompt);
+  document.getElementById('name-span').innerHTML = localStorage.getItem('firstname');
 }
