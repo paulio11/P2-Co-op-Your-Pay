@@ -84,7 +84,7 @@ function populateCalendar() {
     weekNumbers = [31, 32, 33, 34];
     payday = '25th August';
     nextPayday = '22nd September';
-  } else if (payPeriodValue == '220210') {
+  } else if (payPeriodValue == '202210') {
     selectedPeriod = period202210;
     weekNumbers = [35, 36, 37, 38];
     payday = '22nd September';
