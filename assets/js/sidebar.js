@@ -39,6 +39,8 @@ function closeSidebar() {
 
 
 
+//just for fun.
+
 window.onload = populateName()
 
 function populateName() {
