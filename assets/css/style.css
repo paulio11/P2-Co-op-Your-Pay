@@ -300,3 +300,9 @@ button:active {
 .results {
   font-weight: bold;
 }
+
+/* problems.html */
+
+.bullet-list li {
+  margin-left: 16px;
+}
