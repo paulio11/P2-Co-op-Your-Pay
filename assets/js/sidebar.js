@@ -42,30 +42,34 @@ function closeSidebar() {
 //just for fun.
 
 
-window.onload = loadName;
+
 
 
 let userMenu = document.getElementById('user-name');
-userMenu.addEventListener('click', addName);
-
 let nameSpan = document.getElementById('name-span');
+var userName = localStorage.getItem('username');
 
-
+window.onload = loadName();
 
 
 
 function loadName() {
 
-  if (!localStorage.getItem('username')) {
-    nameSpan.innerHTML = 'EmployeeTEST';
+  if (userName == 'null') {
+    nameSpan.innerHTML = 'Employee'
+    console.log('no username');
   } else {
-    nameSpan.innerHTML = localStorage.getItem('username');
+    nameSpan.innerHTML = userName;
+    console.log('username exists: ' + userName);
   }
 
 }
 
 
 
+
+
+userMenu.addEventListener('click', addName);
 
 function addName() {
 
