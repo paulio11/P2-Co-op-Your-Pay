@@ -13,7 +13,7 @@ let sidebarMenu = document.getElementById('sidebar');
 /**
  * move container on to viewport, disable scrolling, open sidebar.
  */
-function openSidebar() {  
+function openSidebar() {
 
   sidebarContainer.style.top = '0';
   sidebarContainer.style.left = '0';
@@ -27,7 +27,7 @@ function openSidebar() {
  * move container out of viewport, enable scrolling, close sidebar.
  */
 function closeSidebar() {
-  
+
   sidebarContainer.style.top = '-100vh';
   sidebarContainer.style.left = '-100vw';
   document.body.style.overflow = 'initial';
@@ -41,25 +41,40 @@ function closeSidebar() {
 
 //just for fun.
 
-window.onload = populateName()
 
-function populateName() {
-  if (localStorage.getItem('firstname') === null) {
-    document.getElementById('name-span').innerHTML = 'Employee';
+window.onload = loadName;
+
+
+let userMenu = document.getElementById('user-name');
+userMenu.addEventListener('click', addName);
+
+let nameSpan = document.getElementById('name-span');
+
+
+
+
+
+function loadName() {
+
+  if (!localStorage.getItem('username')) {
+    nameSpan.innerHTML = 'EmployeeTEST';
   } else {
-    document.getElementById('name-span').innerHTML = localStorage.getItem('firstname');
+    nameSpan.innerHTML = localStorage.getItem('username');
   }
+
 }
 
 
 
-let helloEmployee = document.getElementById('user-name');
-helloEmployee.addEventListener('click', addName);
-
-
 
 function addName() {
-  var namePrompt = prompt('What is your first name?');
-  localStorage.setItem('firstname', namePrompt);
-  document.getElementById('name-span').innerHTML = localStorage.getItem('firstname');
+
+  var namePrompt = prompt('What is your name?');
+  localStorage.setItem('username', namePrompt);
+  if (namePrompt === null) {
+    nameSpan.innerHTML = 'Employee';
+  } else {
+    nameSpan.innerHTML = namePrompt;
+  }
+
 }
