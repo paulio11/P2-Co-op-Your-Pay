@@ -306,3 +306,8 @@ button:active {
 .bullet-list li {
   margin-left: 16px;
 }
+
+.contents {
+  list-style: none;
+  border-left: 4px solid #6285b4;
+}
