@@ -115,10 +115,12 @@ footer {
   right: -300px;
   position: relative;
   transition: .2s ease-in;
+  visibility: hidden;
 }
 
 .sidebar-open {
   transform: translate(-300px, 0);
+  visibility: visible !important;
 }
 
 .sidebar-closed {
