@@ -15,8 +15,7 @@ let sidebarMenu = document.getElementById('sidebar');
  */
 function openSidebar() {
 
-  sidebarContainer.style.top = '0';
-  sidebarContainer.style.left = '0';
+  sidebarContainer.style.visibility = 'visible';
   document.body.style.overflow = 'hidden';
   sidebarMenu.classList.remove('sidebar-closed');
   sidebarMenu.classList.add('sidebar-open');
@@ -28,8 +27,7 @@ function openSidebar() {
  */
 function closeSidebar() {
 
-  sidebarContainer.style.top = '-100vh';
-  sidebarContainer.style.left = '-100vw';
+  sidebarContainer.style.visibility = 'hidden';
   document.body.style.overflow = 'initial';
   sidebarMenu.classList.remove('sidebar-open');
   sidebarMenu.classList.add('sidebar-closed');
@@ -40,10 +38,6 @@ function closeSidebar() {
 
 
 //just for fun.
-
-
-
-
 
 let userMenu = document.getElementById('user-name');
 let nameSpan = document.getElementById('name-span');

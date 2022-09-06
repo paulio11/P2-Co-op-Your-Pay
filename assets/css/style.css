@@ -101,9 +101,10 @@ footer {
   background-color: rgba(20, 20, 20, 0.7);
   z-index: 10;
   position: fixed;
-  top: -100vh;
-  left: -100vw;
+  top: 0;
+  left: 0;
   width: 100vw;
+  visibility: hidden;
 }
 
 #sidebar {
