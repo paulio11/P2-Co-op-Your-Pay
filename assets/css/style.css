@@ -72,7 +72,7 @@ footer {
   #logo {
     display: none;
   }
-  
+
 }
 
 .spaced {
@@ -364,10 +364,11 @@ summary {
   background-color: #6285b4;
   color: white;
   border-radius: 3px;
+  padding-left: 8px;
 }
 
-summary::marker {
-  color: #6285b4;
+summary::-webkit-details-marker {
+  display: none;
 }
 
 details {
