@@ -16,7 +16,14 @@ for (let i = 0; i < paydays.length; i++) {
 }
 
 let daysUntil = nextPayday - todayDate;
+let daysUntilDays = daysUntil / (1000 * 3600 * 24);
+let daysSpan = document.getElementById('day-s');
 
-// document.getElementById('today').innerHTML = todayDate.toLocaleString('en-GB', options);
 document.getElementById('next-payday').innerHTML = nextPayday.toLocaleString('en-GB', options);
-document.getElementById('days-until').innerHTML = (daysUntil / (1000 * 3600 * 24)).toFixed(0);
+document.getElementById('days-until').innerHTML = daysUntilDays.toFixed(0);
+
+if (daysUntilDays.toFixed(0) == 1) {
+  daysSpan.innerHTML = 'day';
+} else {
+  daysSpan.innerHTML = 'days';
+}
