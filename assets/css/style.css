@@ -359,3 +359,24 @@ button:active {
   width: 20%;
   font-weight: bold;
 }
+
+summary {
+  background-color: #6285b4;
+  color: white;
+  border-radius: 3px;
+}
+
+summary::marker {
+  color: #6285b4;
+}
+
+details {
+  background-color: #dfdfdf;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-weight: bold;
+}
+
+details li {
+  list-style: none;
+}
