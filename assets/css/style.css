@@ -245,20 +245,20 @@ input[type=number] {
   text-align: center;
 }
 
-table {
+.week-table {
   width: 100%;
 }
 
-th {
+.week-table th {
   text-align: left;
 }
 
-th:nth-of-type(2),
-td:nth-of-type(2) {
+.week-table th:nth-of-type(2),
+.week-table td:nth-of-type(2) {
   text-align: right;
 }
 
-tr td:nth-of-type(1) {
+.week-table tr td:nth-of-type(1) {
   font-size: 12px;
 }
 
@@ -318,4 +318,10 @@ button:active {
 .contents {
   list-style: none;
   border-left: 4px solid #6285b4;
+}
+
+/* understand.html */
+
+.payments tr {
+  font-size: initial;
 }
