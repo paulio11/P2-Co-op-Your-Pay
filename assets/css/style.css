@@ -322,6 +322,28 @@ button:active {
 
 /* understand.html */
 
-.payments tr {
-  font-size: initial;
+.payments {
+  font-size: 13px;
+  width: 100%;
+}
+
+.payments tr:nth-child(even) {
+  background-color: #dfdfdf;
+}
+
+.payments tr:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+.payments td {
+  padding: 4px 8px;
+}
+
+.payments tr td {
+  vertical-align: top;
+}
+
+.payments tr td:nth-of-type(1) {
+  width: 20%;
+  font-weight: bold;
 }
