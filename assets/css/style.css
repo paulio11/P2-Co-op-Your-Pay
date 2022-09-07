@@ -32,6 +32,11 @@ h2 {
   font-size: 16px;
 }
 
+h3 {
+  font-size: inherit;
+  font-style: italic;
+}
+
 a {
   color: #326bb7;
 }
