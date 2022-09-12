@@ -61,6 +61,7 @@ footer {
 
 #logo {
   height: 32px;
+  display: block;
 }
 
 @media screen and (max-width:330px) {
