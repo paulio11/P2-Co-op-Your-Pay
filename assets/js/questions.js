@@ -71,8 +71,8 @@ const questions = [{
       'No breaks',
       'A 1 hour paid break',
       'Two 15 minute unpaid breaks',
-      'Two 15 minute paid breajs and a 30 minute unpaid break'
+      'Two 15 minute paid breaks and a 30 minute unpaid break'
     ],
-    answer: 'Two 15 minute paid breajs and a 30 minute unpaid break'
+    answer: 'Two 15 minute paid breaks and a 30 minute unpaid break'
   }
 ]
