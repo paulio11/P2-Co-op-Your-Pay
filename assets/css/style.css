@@ -434,3 +434,89 @@ details {
 details li {
   list-style: none;
 }
+
+/* quiz.html */
+
+#question {
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.option {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #dfdfdf;
+  margin-bottom: 16px;
+}
+
+.option-hover:hover {
+  cursor: pointer;
+  background-color: #326bb7;
+  color: white;
+}
+
+.correct-answer {
+  background-color: green;
+  color: white;
+}
+
+.correct-answer::before {
+  content: "correct TEST - ";
+}
+
+.incorrect-answer {
+  background-color: red;
+  color: white;
+}
+
+.incorrect-answer::before {
+  content: "incorrect TEST - ";
+}
+
+#quiz-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+#score {
+  display: none;
+  text-align: center;
+  background-color: #326bb7;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 0 16px;
+  color: white;
+}
+
+.score-box {
+  border: 1px solid black;
+  border-radius: 4px;
+  height: 24px;
+  width: 24px;
+  margin-right: 4px;
+}
+
+.score-box-correct {
+  background-color: green;
+}
+
+.score-box-incorrect {
+  background-color: red;
+}
+
+#quiz-tracker {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#restart-button,
+#next-button,
+#quiz-container {
+  display: none;
+}
+
+.quiz-button {
+  margin: 16px auto;
+}
