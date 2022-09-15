@@ -1,11 +1,8 @@
 //html elements.
 const questionDiv = document.getElementById('question');
 const answersDiv = document.getElementById('answers');
-const buttonsDiv = document.getElementById('quiz-buttons');
-const scoreDiv = document.getElementById('score');
 const nextButton = document.getElementById('next-button');
 const quizContainer = document.getElementById('quiz-container');
-const quizTracker = document.getElementById('quiz-tracker');
 const startButton = document.getElementById('start-button');
 
 //quiz variables.
@@ -58,6 +55,7 @@ function getQuestion(number) {
 function checkAnswer(event) {
 
   const options = document.getElementsByClassName('option');
+  const quizTracker = document.getElementById('quiz-tracker');
   let resultSquare = document.createElement('div');
 
   //removes hover class and event listener from each option div.
@@ -124,10 +122,10 @@ function continueQuiz() {
 function endQuiz() {
 
   //hide quiz container and buttons.
-  buttonsDiv.style.display = 'none';
+  document.getElementById('quiz-buttons').style.display = 'none';
   quizContainer.style.display = 'none';
   //show score.
-  scoreDiv.style.display = 'block';
+  document.getElementById('score').style.display = 'block';
 
   //populates score-span with score variable.
   let scoreSpan = document.getElementById('score-span');
