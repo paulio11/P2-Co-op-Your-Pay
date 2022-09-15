@@ -11,7 +11,7 @@ let sidebarContainer = document.getElementById('sidebar-container');
 let sidebarMenu = document.getElementById('sidebar');
 
 /**
- * move container on to viewport, disable scrolling, open sidebar.
+ * Make container visible, disable scrolling, open sidebar.
  */
 function openSidebar() {
 
@@ -23,7 +23,7 @@ function openSidebar() {
 }
 
 /**
- * move container out of viewport, enable scrolling, close sidebar.
+ * Make container invisible, enable scrolling, close sidebar.
  */
 function closeSidebar() {
 
@@ -34,44 +34,46 @@ function closeSidebar() {
 
 }
 
-
-
-
-//just for fun.
-
-let userMenu = document.getElementById('user-name');
 let nameSpan = document.getElementById('name-span');
-var userName = localStorage.getItem('username');
 
 window.onload = loadName();
 
-
-
+/**
+ * Gets username from local storage and populates span.
+ */
 function loadName() {
 
-  if (userName == 'null') {
-    nameSpan.innerHTML = 'Employee'
-    console.log('no username');
+  //get username.
+  let userName = localStorage.getItem('username');
+  if (userName == 'null' || userName == null) {
+    //if there is no username set, use 'Employee'.
+    userName = 'Employee';
+    console.log('No username');
   } else {
+    //else fill span with username from local storage.
     nameSpan.innerHTML = userName;
-    console.log('username exists: ' + userName);
+    console.log('Username exists: ' + userName);
   }
 
 }
 
-
-
-
-
+//add event listener to username div in header -> run addName.
+let userMenu = document.getElementById('user-name');
 userMenu.addEventListener('click', addName);
 
+/**
+ * Calls a prompt, ouput of which is set as username in localstorage.
+ */
 function addName() {
 
   var namePrompt = prompt('What is your name?');
+  //set username.
   localStorage.setItem('username', namePrompt);
   if (namePrompt === null) {
+    //if user cancels out of prompt.
     nameSpan.innerHTML = 'Employee';
   } else {
+    //fill name-span with input from prompt.
     nameSpan.innerHTML = namePrompt;
   }
 
