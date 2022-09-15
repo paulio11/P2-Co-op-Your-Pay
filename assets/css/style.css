@@ -461,7 +461,7 @@ details li {
 }
 
 .correct-answer::before {
-  content: "correct TEST - ";
+  content: "CORRECT! - ";
 }
 
 .incorrect-answer {
@@ -470,7 +470,7 @@ details li {
 }
 
 .incorrect-answer::before {
-  content: "incorrect TEST - ";
+  content: "INCORRECT! - ";
 }
 
 #quiz-buttons {
