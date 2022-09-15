@@ -20,6 +20,58 @@ body {
   min-height: 100vh;
 }
 
+/* landing page */
+
+#landing {
+  background-color: #326bb7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#landing h1 {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+#landing-logo {
+  height: 64px;
+  margin-top: 24px;
+}
+
+#landing p {
+  max-width: 300px;
+  padding: 16px;
+  color: white;
+  text-align: justify;
+}
+
+#landing-nav-list {
+  list-style: none;
+  color: white;
+  margin: 32px 0;
+}
+
+#landing-nav-list a {
+  color: white;
+  text-decoration: none;
+}
+
+#landing-nav-list li {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#landing-nav-list li:hover {
+  background-color: #334c89;
+}
+
 /* headings */
 
 h1 {
