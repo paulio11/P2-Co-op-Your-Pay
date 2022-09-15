@@ -49,8 +49,29 @@
       </div>
     </div>
   </header>
-
-
+  <div id="background">
+    <div id="main-content">
+      <h1>Quiz</h1>
+      <div class="box">
+        <h2>Instructions</h2>
+        <p>Instruction text</p>
+      </div>
+      <div class="buttons"><button id="start-button" class="quiz-button">Start Quiz</button></div>
+      <div class="box" id="quiz-container">
+        <div id="question"></div>
+        <div id="answers"></div>
+      </div>
+      <div id="quiz-buttons">
+        <div id="quiz-tracker"></div>
+        <button id="next-button">Next Question</button>
+      </div>
+      <div id="score">
+        <h2>You got <span id="score-span"></span> out of <span id="quiz-length"></span> questions correct!</h2>
+        <h2><span id="score-feedback"></span></h2>
+      </div>
+      <button id="restart-button" class="quiz-button">Restart Quiz</button>
+    </div>
+  </div>
   <footer>
     <span>Payday Calculator by Paul Young</span>
   </footer>
