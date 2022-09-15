@@ -30,7 +30,10 @@ function populateCalendar() {
   const period202207 = [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 1, 2]; //5 June 2022 - 2 July 2022
   const period202208 = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]; //3 July 2022 - 30 July 2022
   const period202209 = [31, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]; //31 July 2022 - 27 August 2022
-  const period202210 = [28, 29, 30, 31, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24] //28 August 2022 - 24 September 2022
+  const period202210 = [28, 29, 30, 31, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]; //28 August 2022 - 24 September 2022
+  const period202211 = [25, 26, 27, 28, 29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]; //25 September 2022 - 22 October 2022
+  const period202212 = [23, 24, 25, 26, 27, 28, 29, 30, 31, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]; //23 October 2022 - 19 November 2022
+  const period202213 = [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]; //20 November 2022 - 17 December 2022
 
   let payPeriodValue = document.getElementById('pay-period').value;
   let selectedPeriod = [];
@@ -89,6 +92,21 @@ function populateCalendar() {
     weekNumbers = [35, 36, 37, 38];
     payday = '22nd September';
     nextPayday = '20th October';
+  } else if (payPeriodValue == '202211') {
+    selectedPeriod = period202211;
+    weekNumbers = [39, 40, 41, 42];
+    payday = '20th October';
+    nextPayday = '17th November';
+  } else if (payPeriodValue == '202212') {
+    selectedPeriod = period202212;
+    weekNumbers = [43, 44, 45, 46];
+    payday = '17th November';
+    nextPayday = '15th December';
+  } else if (payPeriodValue == '202213') {
+    selectedPeriod = period202213;
+    weekNumbers = [47, 48, 49, 50];
+    payday = '15th December';
+    nextPayday = '12th January';
   }
 
   //looks at last digit of date number and adds correct suffix to the string.
