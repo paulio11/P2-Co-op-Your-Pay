@@ -1,3 +1,4 @@
+//html elements.
 const questionDiv = document.getElementById('question');
 const answersDiv = document.getElementById('answers');
 const buttonsDiv = document.getElementById('quiz-buttons');
@@ -7,15 +8,47 @@ const quizContainer = document.getElementById('quiz-container');
 const quizTracker = document.getElementById('quiz-tracker');
 const startButton = document.getElementById('start-button');
 
+//quiz variables.
 let number = 0;
 let score = 0;
 
+//get number of questions from array and adds to results text.
 document.getElementById('quiz-length').innerHTML = questions.length;
+
 startButton.addEventListener('click', startQuiz);
 
+/**
+ * Runs getQuestion function with number = 0 variable to load first question. 
+ */
 function startQuiz() {
 
   getQuestion(number);
+
+}
+
+/**
+ * Pulls question from array and creates elements to contain the possible answers.
+ */
+ function getQuestion(number) {
+
+  //hide start quiz button and shows quiz container div.
+  startButton.style.display = 'none';
+  quizContainer.style.display = 'block';
+
+  //create a paragraph element to display question text.
+  let question = document.createElement('p');
+  question.textContent = questions[number].questionText;
+  questionDiv.append(question);
+
+  //loop takes possible answers from array and creates a div for each, adds classes and event listener.
+  let options = questions[number].options;
+  for (let i = 0; i < 4; i++) {
+    let option = document.createElement('div');
+    option.classList.add('option', 'option-hover');
+    option.innerHTML = options[i];
+    answersDiv.append(option);
+    option.addEventListener('click', checkAnswer);
+  }
 
 }
 
