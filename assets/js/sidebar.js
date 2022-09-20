@@ -35,6 +35,7 @@ function closeSidebar() {
 }
 
 let nameSpan = document.getElementById('name-span');
+let userName = localStorage.getItem('username');
 
 window.onload = loadName();
 
@@ -44,8 +45,7 @@ window.onload = loadName();
 function loadName() {
 
   //get username.
-  let userName = localStorage.getItem('username');
-  if (userName == 'null' || userName == null) {
+  if (userName === 'null' || userName === null || userName === '') {
     //if there is no username set, use 'Employee'.
     userName = 'Employee';
     console.log('No username');
@@ -68,13 +68,14 @@ function addName() {
 
   var namePrompt = prompt('What is your name?');
   //set username.
-  localStorage.setItem('username', namePrompt);
-  if (namePrompt === null) {
+  if (namePrompt === 'null' || namePrompt === null || namePrompt === '') {
     //if user cancels out of prompt.
     nameSpan.innerHTML = 'Employee';
+    localStorage.setItem('username', namePrompt);
   } else {
     //fill name-span with input from prompt.
     nameSpan.innerHTML = namePrompt;
+    localStorage.setItem('username', namePrompt);
   }
 
 }
