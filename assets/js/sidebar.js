@@ -1,3 +1,10 @@
+//assigning container and sidebar to variables.
+let sidebarContainer = document.getElementById('sidebar-container');
+let sidebarMenu = document.getElementById('sidebar');
+
+//close sidebar if clicked outside of it.
+sidebarContainer.addEventListener('click', closeSidebar);
+
 //add event listener to menu button -> run openSidebar.
 let menuButton = document.getElementById('menu-button');
 menuButton.addEventListener('click', openSidebar);
@@ -5,10 +12,6 @@ menuButton.addEventListener('click', openSidebar);
 //add event listener to close button -> run closeSidebar.
 let closeMenu = document.getElementById('close-menu');
 closeMenu.addEventListener('click', closeSidebar);
-
-//assigning container and sidebar to variables.
-let sidebarContainer = document.getElementById('sidebar-container');
-let sidebarMenu = document.getElementById('sidebar');
 
 /**
  * Make container visible, disable scrolling, open sidebar.
