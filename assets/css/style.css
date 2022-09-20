@@ -57,13 +57,16 @@ body {
 #landing-nav-list a {
   color: white;
   text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
 }
 
 #landing-nav-list li {
   text-align: center;
   font-weight: bold;
   font-size: 24px;
-  padding: 12px;
   cursor: pointer;
   border-radius: 4px;
 }
@@ -210,7 +213,6 @@ footer {
 
 #sidebar li {
   width: 100%;
-  padding: 16px;
   cursor: pointer;
   font-size: 22px;
   font-weight: bold;
@@ -223,11 +225,14 @@ footer {
 #sidebar a {
   text-decoration: none;
   color: white;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
 }
 
 .active-nav {
   border-left: 4px solid white;
-  padding-left: 12px !important;
 }
 
 /* main content */
