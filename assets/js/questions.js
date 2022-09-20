@@ -11,7 +11,7 @@ const questions = [{
   },
   {
     number: 2,
-    questionText: 'What do of the week do you get paid on?',
+    questionText: 'What day of the week do you get paid on?',
     options: [
       'Monday',
       'Thursday',
