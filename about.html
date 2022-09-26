@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Paul Young">
-  <meta name="tags" content="payday calculator">
+  <meta name="tags" content="calculator, co-op, payday, payments, deductions, quiz">
   <meta name="description" content="Co-op - Your Pay. A website to help you with your pay.">
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -14,7 +14,9 @@
 </head>
 
 <body>
+  <!-- overlay start -->
   <div id="sidebar-container">
+    <!-- sidebar start -->
     <nav id="sidebar">
       <span id="close-menu">Close menu <i class="fa-regular fa-circle-xmark x-close"></i></span>
       <h1 class="nav-heading">Main menu</h1>
@@ -26,7 +28,9 @@
         <li class="active-nav"><a href="#">About</a></li>
       </ul>
     </nav>
+    <!-- sidebar end -->
   </div>
+  <!-- overlay end -->
   <header>
     <a href="index.html"><img src="assets/images/coop-logo.svg" id="logo" alt="coop logo" width="32px"
         height="32px"></a>
@@ -43,8 +47,9 @@
   </header>
   <div id="background">
     <div id="main-content">
-      <h1>About</h1>
-      <div class="box">
+      <h1>Co-op Your Pay</h1>
+      <section id="about" class="box">
+        <h2>About</h2>
         <p>Co-op Your Pay is a website created by Paul Young. You can find out more about it <a
             href="https://github.com/paulio11/project-2" target="_blank">here on GitHub</a>.
           <br>
@@ -52,13 +57,15 @@
             calculate your pay.</strong>
           <br>
           It was built to learn more about Javascript. Have fun poking around.</p>
-      </div>
+      </section>
     </div>
   </div>
   <footer>
     <span>Co-op Your Pay - website created by Paul Young.</span>
   </footer>
+  <!-- font awesome script -->
   <script src="https://kit.fontawesome.com/9446ef5fe5.js" crossorigin="anonymous"></script>
+  <!-- sidebar menu behaviour script -->
   <script src="assets/js/sidebar.js"></script>
 </body>
 

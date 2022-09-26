@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Paul Young">
-  <meta name="tags" content="payday calculator">
+  <meta name="tags" content="calculator, co-op, payday, payments, deductions, quiz">
   <meta name="description" content="Co-op - Your Pay. A website to help you with your pay.">
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -14,7 +14,9 @@
 </head>
 
 <body>
+  <!-- overlay start -->
   <div id="sidebar-container">
+    <!-- sidebar start -->
     <nav id="sidebar">
       <span id="close-menu">Close menu <i class="fa-regular fa-circle-xmark x-close"></i></span>
       <h1 class="nav-heading">Main menu</h1>
@@ -26,7 +28,9 @@
         <li><a href="about.html">About</a></li>
       </ul>
     </nav>
+    <!-- sidebar end -->
   </div>
+  <!-- overlay end -->
   <header>
     <a href="index.html"><img src="assets/images/coop-logo.svg" id="logo" alt="coop logo" width="32px"
         height="32px"></a>
@@ -44,12 +48,14 @@
   <div id="background">
     <div id="main-content">
       <h1>Payday Calculator</h1>
-      <div id="instructions" class="box">
+      <!-- instructions -->
+      <section id="instructions" class="box">
         <p>Use this page to help calculate the pay you will recieve. Enter your details below and select the relevant
           pay period.</p>
         <br>
         <p><a href="#" id="test-data">Fill form with test data</a></p>
-      </div>
+      </section>
+      <!-- form start -->
       <form id="pay-form">
         <div id="form-inputs" class="box">
           <div class="about-box">
@@ -73,6 +79,7 @@
             <h2>About This Period</h2>
             <label for="pay-period">Pay Period:</label>
             <br>
+            <!-- pay period selection (requires additions to work in 2023) -->
             <select name="pay-period" id="pay-period" required>
               <option value="202201">19th Dec 2021 - 15th Jan 2022</option>
               <option value="202202">16th Jan 2022 - 12th Feb 2022</option>
@@ -100,6 +107,7 @@
           <h2>Hours You Have Worked</h2>
           <br>
           <div id="calendar">
+            <!-- week 1 -->
             <div class="week">
               <h2>Week <span class="week-number"></span></h2>
               <table id="week1" class="week-table">
@@ -137,6 +145,7 @@
                 </tr>
               </table>
             </div>
+            <!-- week 2 -->
             <div class="week">
               <h2>Week <span class="week-number"></span></h2>
               <table id="week2" class="week-table">
@@ -174,6 +183,7 @@
                 </tr>
               </table>
             </div>
+            <!-- week 3 -->
             <div class="week">
               <h2>Week <span class="week-number"></span></h2>
               <table id="week3" class="week-table">
@@ -211,6 +221,7 @@
                 </tr>
               </table>
             </div>
+            <!-- week 4 -->
             <div class="week">
               <h2>Week <span class="week-number"></span></h2>
               <table id="week4" class="week-table">
@@ -255,6 +266,8 @@
           <button type="submit">Calculate Pay</button>
         </div>
       </form>
+      <!-- form end -->
+      <!-- results start (hidden by CSS)-->
       <div id="results" class="box">
         <h2>Results</h2>
         <p>Hourly Rate: <span id="your-wage" class="results"></span></p>
@@ -264,13 +277,17 @@
             deductions</a>.</p>
         <p>Overtime being paid on <span id="next-payday"></span>: <span id="next-overtime" class="results"></span></p>
       </div>
+      <!-- results end -->
     </div>
   </div>
   <footer>
     <span>Co-op Your Pay - website created by Paul Young.</span>
   </footer>
+  <!-- font awesome script -->
   <script src="https://kit.fontawesome.com/9446ef5fe5.js" crossorigin="anonymous"></script>
+  <!-- sidebar menu behaviour script -->
   <script src="assets/js/sidebar.js"></script>
+  <!-- payday calculator script -->
   <script src="assets/js/calculator.js"></script>
 </body>
 

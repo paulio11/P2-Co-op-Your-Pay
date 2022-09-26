@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Paul Young">
-  <meta name="tags" content="payday calculator">
+  <meta name="tags" content="calculator, co-op, payday, payments, deductions, quiz">
   <meta name="description" content="Co-op - Your Pay. A website to help you with your pay.">
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -14,7 +14,9 @@
 </head>
 
 <body>
+  <!-- overlay start -->
   <div id="sidebar-container">
+    <!-- sidebar start -->
     <nav id="sidebar">
       <span id="close-menu">Close menu <i class="fa-regular fa-circle-xmark x-close"></i></span>
       <h1 class="nav-heading">Main menu</h1>
@@ -26,9 +28,12 @@
         <li><a href="about.html">About</a></li>
       </ul>
     </nav>
+    <!-- sidebar end -->
   </div>
+  <!-- overlay end -->
   <header>
-    <a href="index.html"><img src="assets/images/coop-logo.svg" id="logo" alt="coop logo" width="32px" height="32px"></a>
+    <a href="index.html"><img src="assets/images/coop-logo.svg" id="logo" alt="coop logo" width="32px"
+        height="32px"></a>
     <div id="user-menu">
       <div id="user-name">
         <span>Hello <span id="name-span">Employee</span>!</span>
@@ -43,32 +48,48 @@
   <div id="background">
     <div id="main-content">
       <h1>Quiz</h1>
-      <div class="box">
+      <section id="instructions" class="box">
         <h2>Instructions</h2>
-        <p>Test your pay and payday knowledge with this quiz! You should be able to find all the answers you need here on this website - so try to get all the questions correct. Click Start Quiz to begin, and good luck!</p>
+        <p>Test your pay and payday knowledge with this quiz! You should be able to find all the answers you need here
+          on this website - so try to get all the questions correct. Click Start Quiz to begin, and good luck!</p>
+      </section>
+      <!-- start quiz button -->
+      <div class="buttons">
+        <button id="start-button" class="quiz-button">Start Quiz</button>
       </div>
-      <div class="buttons"><button id="start-button" class="quiz-button">Start Quiz</button></div>
+      <!-- container for question and answers -->
       <div class="box" id="quiz-container">
-        <div id="question"></div>
-        <div id="answers"></div>
+        <div id="question">
+          <!-- question from quiz.js -->
+        </div>
+        <div id="answers">
+          <!-- multiple choice answers from quiz.js -->
+        </div>
       </div>
+      <!-- quiz progress and next question button -->
       <div id="quiz-buttons">
         <div id="quiz-tracker"></div>
         <button id="next-button">Next Question</button>
       </div>
-      <div id="score">
+      <!-- score section (hidden by CSS) -->
+      <section id="score">
         <h2>You got <span id="score-span"></span> out of <span id="quiz-length"></span> questions correct!</h2>
         <h2><span id="score-feedback"></span></h2>
-      </div>
+      </section>
+      <!-- restart button (hidden by CSS) -->
       <button id="restart-button" class="quiz-button">Restart Quiz</button>
     </div>
   </div>
   <footer>
     <span>Co-op Your Pay - website created by Paul Young.</span>
   </footer>
+  <!-- font awesome script -->
   <script src="https://kit.fontawesome.com/9446ef5fe5.js" crossorigin="anonymous"></script>
+  <!-- sidebar menu behaviour script -->
   <script src="assets/js/sidebar.js"></script>
+  <!-- quiz questions script -->
   <script src="assets/js/questions.js"></script>
+  <!-- quiz script -->
   <script src="assets/js/quiz.js"></script>
 </body>
 

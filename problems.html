@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Paul Young">
-  <meta name="tags" content="payday calculator">
+  <meta name="tags" content="calculator, co-op, payday, payments, deductions, quiz">
   <meta name="description" content="Co-op - Your Pay. A website to help you with your pay.">
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -14,7 +14,9 @@
 </head>
 
 <body>
+  <!-- overlay start -->
   <div id="sidebar-container">
+    <!-- sidebar start -->
     <nav id="sidebar">
       <span id="close-menu">Close menu <i class="fa-regular fa-circle-xmark x-close"></i></span>
       <h1 class="nav-heading">Main menu</h1>
@@ -26,9 +28,12 @@
         <li><a href="about.html">About</a></li>
       </ul>
     </nav>
+    <!-- sidebar end -->
   </div>
+  <!-- overlay end -->
   <header>
-    <a href="index.html"><img src="assets/images/coop-logo.svg" id="logo" alt="coop logo" width="32px" height="32px"></a>
+    <a href="index.html"><img src="assets/images/coop-logo.svg" id="logo" alt="coop logo" width="32px"
+        height="32px"></a>
     <div id="user-menu">
       <div id="user-name">
         <span>Hello <span id="name-span">Employee</span>!</span>
@@ -43,7 +48,8 @@
   <div id="background">
     <div id="main-content">
       <h1>Problems With Your Pay</h1>
-      <div class="box">
+      <!-- page contents start -->
+      <section id="contents" class="box">
         <p>Use this page to help if you think your pay is wrong.</p>
         <br>
         <ul class="bullet-list contents">
@@ -55,7 +61,8 @@
           <li><a href="#problem6">You're repaying a debt or court order</a></li>
           <li><a href="#problem7">You're repaying a student loan</a></li>
         </ul>
-      </div>
+      </section>
+      <!-- page contents end -->
       <div class="box" id="problem1">
         <h2>You think you've been paid the wrong amount</h2>
         <p>Speak with your manager first to check that any overtime, holiday pay or sick pay has been approved in time.
@@ -79,7 +86,7 @@
         <br>
         <p>Check the <a href="https://www.gov.uk/check-income-tax-current-year" target="_blank">HMRC website</a> to see
           how much tax you should be paying. <a
-            href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/income-tax-enquiries-for-individuals-pensioners-and-employees?utm_source=contact-hmrc-wrong&utm_medium=internal-link&utm_campaign=p800"
+            href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/income-tax-enquiries-for-individuals-pensioners-and-employees"
             target="_blank">Contact HMRC</a> directly if you still think your payslip is wrong.</p>
       </div>
       <div class="box" id="problem5">
@@ -114,7 +121,9 @@
   <footer>
     <span>Co-op Your Pay - website created by Paul Young.</span>
   </footer>
+  <!-- font awesome script -->
   <script src="https://kit.fontawesome.com/9446ef5fe5.js" crossorigin="anonymous"></script>
+  <!-- sidebar menu behaviour script -->
   <script src="assets/js/sidebar.js"></script>
 </body>
 
