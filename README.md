@@ -112,7 +112,7 @@ With the information above, I came up with the website hierarchical structure. T
 The site uses a restrained and on-brand colour scheme. The design is professional and fits with existing Co-op employee websites. The idea is that one day it could be a part of it. I am demonstrating my ability to create a potential and seamless addition to what is currently available to employees. The few colours chosen are featured throughout the entire site, from the home page to each page after that - providing a cohesive experience for the user.
 
 #### Color Palette
-STICK COLOR PALETTE IMAGE HERE
+![Color Palette](https://paulio11.github.io/project-2/documentation/color-palette.png)
 
 ### Typography
 Fonts are imported from [Google Fonts](https://fonts.google.com/). The font used for all elements is [Roboto](https://fonts.google.com/specimen/Roboto). Roboto is a clear, versatile font. Simply increasing the font-weight creates enough contrast between titles and body text.
@@ -269,7 +269,7 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 6. Upon selection, the page will automatically refresh meaning that the website is now deployed.
 7. Scroll back down to the "Pages" section to retrieve the deployed link.
 
-**Note:** when this website is hosted a different URL - the head link to the stylesheet will need to be manually changed to correctly style the error pages 404.html and 500.html.
+**Note:** when this website is hosted at a different URL - the head link to the stylesheet will need to be manually changed to correctly style the error pages 404.html and 500.html.
 
 [Back to top 🔺](#)
 
