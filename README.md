@@ -6,6 +6,34 @@
 
 ## Contents 
 
+1. [Introduction](https://github.com/paulio11/project-2#introduction)
+2. [The User Experience](https://github.com/paulio11/project-2#the-user-experience)
+    1. [User Goals](https://github.com/paulio11/project-2#user-goals)
+3. [Development Planning](https://github.com/paulio11/project-2#development-planning)
+    1. [Strategy](https://github.com/paulio11/project-2#strategy)
+    2. [Site Map](https://github.com/paulio11/project-2#site-map)
+    3. [Wireframes](https://github.com/paulio11/project-2#wireframe)
+4. [Design](https://github.com/paulio11/project-2#design)
+    1. [Color Scheme](https://github.com/paulio11/project-2#color-scheme)
+    2. [Color Palette](https://github.com/paulio11/project-2#color-palette)
+    3. [Typography](https://github.com/paulio11/project-2#typography)
+    4. [Images](https://github.com/paulio11/project-2#images)
+    5. [Lightweight Design](https://github.com/paulio11/project-2#lightweight-design)
+5.  [Features](https://github.com/paulio11/project-2#features)
+    1. [Unimplemented Features](https://github.com/paulio11/project-2#unimplemented-features)
+6. [Bugs and Other Development Issues](https://github.com/paulio11/project-2#unimplemented-features)
+7. [Technologies](https://github.com/paulio11/project-2#technologies)
+    1. [Main Languages Used](https://github.com/paulio11/project-2#main-languages-used)
+    2. [Other](https://github.com/paulio11/project-2#other)
+8. [Testing](https://github.com/paulio11/project-2#testing)
+9. [Deployment](https://github.com/paulio11/project-2#deployment)
+    1. [Download Code](https://github.com/paulio11/project-2#download-code)
+    2. [GitHub Pages Deployment Procedure](https://github.com/paulio11/project-2#github-pages-deployment-procedure)
+10. [Credits and Acknowledgements](https://github.com/paulio11/project-2#credits-and-acknowledgements)
+    1. [Text](https://github.com/paulio11/project-2#text)
+    2. [Images](https://github.com/paulio11/project-2#images-1)
+    3. [Acknowledgements](https://github.com/paulio11/project-2#acknowledgements)
+
 ## Introduction
 This website serves as a tool for employees of The Co-op - where a user can find help understanding their pay, calculating their pay, and solving any potential issues with their income.
 
@@ -71,10 +99,10 @@ With the information above, I came up with the website hierarchical structure. T
 
 ![Site map](https://paulio11.github.io/project-2/documentation/site-map.png)
 
-### Wireframe
-[Balsamiq for Desktop](https://balsamiq.com/wireframes/) was used ahead of development to plan the basic skeleton of all pages. You can download my wireframe file [here](https://paulio11.github.io/project-2/documentation/wireframe.bmpr).
+### Wireframes
+[Balsamiq for Desktop](https://balsamiq.com/wireframes/) was used ahead of development to plan the basic skeleton of all pages. You can download my wireframes file [here](https://paulio11.github.io/project-2/documentation/wireframe.bmpr).
 
-![Website wireframe](https://paulio11.github.io/project-2/documentation/wireframe.jpg)
+![Website wireframes](https://paulio11.github.io/project-2/documentation/wireframe.jpg)
 
 [Back to top 🔺](#)
 
@@ -105,6 +133,7 @@ These pages contain the following common features:
 **Header**
 - An area at the top of each page containing the logo, a username and a button to open the navigation menu.
 - The icons for the user and menu are from [Font Awesome](https://fontawesome.com/).
+- Within the header, if the user clicks on "Hello Employee" a JavaScript prompt appears asking for the user's name. This will save the input in local storage and display on each future page visit. Just a little easter egg - isn't local storage fun!
 
 **Sidebar**
 - Clicking the menu button in the header will open the navigation menu. Sliding in from the right of the screen using css translation. The button for the menu and the menu’s close button are controlled by javascript.
@@ -129,7 +158,7 @@ _**[Home Page](https://paulio11.github.io/project-2)**_
 
 A simple landing page is all that is needed for a visiting user: the Co-op logo, website title, and a small sentence describing the purpose of the website. Below is the main navigation menu, a copy of what is in the sidebar on other pages.
 
-_**[Payday Calculator](https://paulio11.github.io/project2/calculator.html)**_
+_**[Payday Calculator](https://paulio11.github.io/project-2/calculator.html)**_
 
 The main interactive part of the whole website. This page consists of:
 - User instructions.
@@ -142,7 +171,7 @@ The main interactive part of the whole website. This page consists of:
 - A calculate pay button calls the `handeSubmit()` functions. This shows the results below.
 - Calculator Results. Shown once the user fills out the form and submits. This contains several `<span>` elements that are filled by calculator.js.
 
-_**[Understand Your Pay](https://paulio11.github.io/project2/understand.html)**_ *and* _**[Problems With Your Pay](https://paulio11.github.io/project2/problems.html)**_
+_**[Understand Your Pay](https://paulio11.github.io/project-2/understand.html)**_ *and* _**[Problems With Your Pay](https://paulio11.github.io/project-2/problems.html)**_
 
 Both the *Understand Your Pay* and *Problems With Your Pay* pages start with page contents. An unordered list with a left border to connect them stylistically. Every list item links to a section within each page.
 
@@ -158,11 +187,11 @@ The instruction box uses the same styles as the information on the *Understand Y
 
 The innerText of the created elements comes from reading the value of the (question) `number` variable to get the question text. A `for` loop creates multiple elements with `click` event listeners to show the multiple choice answers. Styles are applied when the choices are created, giving them a `:hover` style. When an option is clicked, the hover style is removed and then the relevant style is applied, whether the selected answer was correct or incorrect. Additionally, the click event displays a continue button, either functioning as the *Next Question*, or *Check My Score* buttons based on the progress through the quiz defined by `questions.length`. This enables more questions to be added beyond what is currently available, and the quiz will still function correctly.
 
-_**[About](https://paulio11.github.io/project2/about.html)**_
+_**[About](https://paulio11.github.io/project-2/about.html)**_
 
 Using the same `<div class="box">` for the information presented in understand.html and problems.html to display a simple about this website box.
 
-_**[Error 404](https://paulio11.github.io/project2/404.html)**_ *and* _**[Error 500](https://paulio11.github.io/project2/500.html)**_
+_**[Error 404](https://paulio11.github.io/project-2/404.html)**_ *and* _**[Error 500](https://paulio11.github.io/project-2/500.html)**_
 
 The error pages are a copy of the design used for the home page. Containing the website logo, title, an explanation of the error and a Go Back button. The go back button jumps the user 1 page back in their history using JavaScript. The left arrow is from [Font Awesome](https://fontawesome.com/).
 
@@ -240,7 +269,7 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 6. Upon selection, the page will automatically refresh meaning that the website is now deployed.
 7. Scroll back down to the "Pages" section to retrieve the deployed link.
 
-**Note:** if this website is hosted a differemt URL - the head link to the stylesheet will need to be manually changed to correctly style the error pages 404.html and 500.html.
+**Note:** when this website is hosted a different URL - the head link to the stylesheet will need to be manually changed to correctly style the error pages 404.html and 500.html.
 
 [Back to top 🔺](#)
 
@@ -256,7 +285,7 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 
 ### Acknowledgements
 
-I would like to thank my mentor [Oluwaseun Owonikoko](https://github.com/seunkoko) students of class June 2022 for their help and suggestions throughout the project.
+I would like to thank my mentor [Oluwaseun Owonikoko](https://github.com/seunkoko) and the students of class June 2022 for their help and suggestions throughout the project.
 
 I would also like to thank fellow CI student [Rebecca Rayner](https://github.com/Irishbecky91). Her excellent project readme was the basis of my own readme's structure.
 
