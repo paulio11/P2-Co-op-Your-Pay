@@ -15,6 +15,8 @@ This project is in no way associated with The Co-op. Therefore, it should not be
 
 Co-op Your Pay is my second milestone project required to complete my Diploma in Full Stack Software Development at The Code Institute. This project required me to showcase my newly learned JavaScript skills paired with HTML and CSS to create something interactive, valuable to the end user, and responsive.
 
+[Back to top 🔺](#)
+
 ## The User Experience
 The ideal user for this website is:
 - A new co-op employee.
@@ -29,6 +31,8 @@ The ideal user for this website is:
 - As a current employee, I want help with the problems I have with my pay.
 - I want to know when payday is.
 - I want help with keeping track and calculating my pay.
+
+[Back to top 🔺](#)
 
 ## Development Planning
 To create an interactive website that allows users to learn more about their pay and help them understand and calculate what they will receive.
@@ -72,6 +76,8 @@ With the information above, I came up with the website hierarchical structure. T
 
 ![Website wireframe](https://paulio11.github.io/project-2/documentation/wireframe.jpg)
 
+[Back to top 🔺](#)
+
 ## Design
 
 ### Color Scheme
@@ -88,6 +94,8 @@ A single image is used - the Co-op logo, shown on the home page and in the heade
 
 ### Lightweight Design
 The whole site is minimal and lightweight. A single font import keeps the required resources low. A single image ensures the combined filesizes remain small. Together they will enable more users and devices to use the website, even on a mobile connection.
+
+[Back to top 🔺](#)
 
 ## Features
 The Calculator, Understand, Problems, Quiz, and about pages have a consistent style. They are built from the ground up to be simple and responsive. Viewable on all screen sizes with a `min-width` of 300px.
@@ -165,8 +173,11 @@ There were just a few things I would have liked to have added.
 - **Calculator Improvemenets** - An easier way for employees to use the calculator would be to use what they already know, i.e. the shift *Start Time* and *End Time*. This way, a user wouldn’t have to calculate the length of the shift and instead just input what time they started and finished work. Ultimately the javascript calculation would remain the same but would have required an extra step at the start - working out the difference in the two date (time) values and using that instead of a simple hours value.
 - **Payslip Information** - Another idea I wanted to implement was to explain the payslip in more detail - to expand the information available to the user further. A page dedicated to the payslip layout where a clickable, interactive example is shown. Clicking elements of the payslip would reveal more detailed information. I passed on this idea early on as it would have proven to be a relatively large amount of work to make something look like this clearly viewable on a smaller screen.
 
+[Back to top 🔺](#)
 
 ## Bugs and Other Development Issues
+
+[Back to top 🔺](#)
 
 ## Technologies
 
@@ -203,18 +214,50 @@ There were just a few things I would have liked to have added.
 - [JSHint JavaScript Code Quality Tool](https://jshint.com)
     - Used to validated JavaScript code.
 
+[Back to top 🔺](#)
+
 ## Testing
+
+[Back to top 🔺](#)
 
 ## Deployment
 
-### Deployment Procedure
+Project written and developed in GitPod, which was then used to commit changes and push to GitHub. The site is hosted using GitHub Pages. 
+
+### Download Code
+
+To download a copy of this project and all required assets click the green **Code** button above the file tree at the top. Then **Download ZIP**.
+
+### GitHub Pages Deployment Procedure
+
+To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
+
+1. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").
+2. Locate this [GitHub Repository](https://github.com/paulio11/project-2 "Link to GitHub Repo").
+3. At the top of the repository, select Settings from the menu items.
+4. Scroll down the Settings page to the "Pages" section.
+5. Under "Source" click the drop-down menu labelled "None" and select "Main".
+6. Upon selection, the page will automatically refresh meaning that the website is now deployed.
+7. Scroll back down to the "Pages" section to retrieve the deployed link.
+
+**Note:** if this website is hosted a differemt URL - the head link to the stylesheet will need to be manually changed to correctly style the error pages 404.html and 500.html.
+
+[Back to top 🔺](#)
 
 ## Credits and Acknowledgements 
 
 ### Text
+- Employee paydays taken from [Co-op Colleagues - See next paydays](https://colleagues.coop.co.uk/see-next-pay-days).
+- Problems with your pay text taken from [Co-op Colleagues - Problems with your pay](https://colleagues.coop.co.uk/problems-with-your-pay).
+- Understand your pay text taken from [Co-op Colleagues - Understand your payslip and pay deductions](https://colleagues.coop.co.uk/understand-your-payslip-and-pay-deductions).
 
-### Images and Video
-
-### Code
+### Images
+- Co-op logo taken from [Co-op Assets](https://www.co-operative.coop/media/assets).
 
 ### Acknowledgements
+
+I would like to thank my mentor [Oluwaseun Owonikoko](https://github.com/seunkoko) students of class June 2022 for their help and suggestions throughout the project.
+
+I would also like to thank fellow CI student [Rebecca Rayner](https://github.com/Irishbecky91). Her excellent project readme was the basis of my own readme's structure.
+
+[Back to top 🔺](#)
