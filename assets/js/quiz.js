@@ -137,7 +137,7 @@ function endQuiz() {
   if (score < 7) {
     //if not all correct - show restart button, change results text.
     let restartButton = document.getElementById('restart-button');
-    scoreFeedback.innerText = 'Try to get all the questions correct - click Restart Quiz below and try again.'
+    scoreFeedback.innerText = 'Try to get all the questions correct - click Restart Quiz below and try again.';
     restartButton.style.display = 'block';
     restartButton.addEventListener('click', restartQuiz);
   } else {

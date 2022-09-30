@@ -75,4 +75,4 @@ const questions = [{
     ],
     answer: 'Two 15 minute paid breaks and a 30 minute unpaid break'
   }
-]
+];

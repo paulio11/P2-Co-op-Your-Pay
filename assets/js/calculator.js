@@ -286,7 +286,7 @@ function fillForm() {
   document.getElementById('london').checked = true;
   document.getElementById('contract-hours').value = 16;
   document.getElementById('holiday-hours').value = 8;
-  document.getElementById('owed-overtime').value = 172.53
+  document.getElementById('owed-overtime').value = 172.53;
   document.getElementsByClassName('hours')[0].value = 8;
   document.getElementsByClassName('hours')[2].value = 8;
   document.getElementsByClassName('hours')[3].value = 7;
