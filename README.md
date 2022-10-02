@@ -302,14 +302,14 @@ There were just a few things I would have liked to have added.
 
 **Common Elements**
 <details>
-    <summary>Navigation and hover effects.</summary>
+    <summary>Navigation and hover effects</summary>
     <img src="https://paulio11.github.io/project-2/documentation/testing/testing-sidebar.gif">
 </details>
 <br>
 
 **[Home Page](https://paulio11.github.io/project-2)**
 <details>
-    <summary>Navigation and hover effects.</summary>
+    <summary>Navigation and hover effects</summary>
     <img src="https://paulio11.github.io/project-2/documentation/testing/testing-homepage.gif">
 </details>
 <br>
@@ -330,6 +330,10 @@ There were just a few things I would have liked to have added.
 <details>
     <summary>calculatePay Function</summary>
     <img src="https://paulio11.github.io/project-2/documentation/testing/testing-calc-calculate.gif">
+</details>
+<details>
+    <summary>Responsive layout</summary>
+    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-calc-responsive.gif">
 </details>
 <br>
 
