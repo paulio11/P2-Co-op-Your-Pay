@@ -395,7 +395,7 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 | Google Chrome | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-chrome.png) |
 | Microsoft Edge | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-edge.png) |
 | Safari | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-safari.png) |
-| Safari Mobile | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-safarimobile.png) |
+| Safari Mobile | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-safarimobile.jpeg) |
 
 
 [Back to top 🔺](#co-op-your-pay)
