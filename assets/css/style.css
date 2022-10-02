@@ -423,10 +423,6 @@ summary {
   padding-left: 8px;
 }
 
-summary::-webkit-details-marker {
-  display: none;
-}
-
 details {
   background-color: #dfdfdf;
   border-bottom-left-radius: 3px;
