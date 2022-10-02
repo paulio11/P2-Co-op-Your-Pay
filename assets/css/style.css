@@ -204,6 +204,7 @@ footer {
   margin: 16px 0 32px 0;
   font-size: 32px;
   clear: right;
+  padding: 32px 16px 16px;
 }
 
 #sidebar ul {
@@ -537,4 +538,14 @@ details li {
 #top-button:hover {
   background-color: white;
   color: #6285b4;
+}
+
+/* error pages */
+
+.back-a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
