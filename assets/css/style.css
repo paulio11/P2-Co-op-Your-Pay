@@ -530,11 +530,11 @@ details li {
   z-index: 99;
   border: none;
   color: white;
-  background-color: #326bb7;
-  border: 2px solid #326bb7;
+  background-color: #6285b4;
+  border: 2px solid #6285b4;
 }
 
 #top-button:hover {
   background-color: white;
-  color: #326bb7;
+  color: #6285b4;
 }

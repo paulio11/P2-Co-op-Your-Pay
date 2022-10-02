@@ -205,6 +205,19 @@ The instruction box uses the same styles as the information on the *Understand Y
 
 The innerText of the created elements comes from reading the value of the (question) `number` variable to get the question text. A `for` loop creates multiple elements with `click` event listeners to show the multiple choice answers. Styles are applied when the choices are created, giving them a `:hover` style. When an option is clicked, the hover style is removed and then the relevant style is applied, whether the selected answer was correct or incorrect. Additionally, the click event displays a continue button, either functioning as the *Next Question*, or *Check My Score* buttons based on the progress through the quiz defined by `questions.length`. This enables more questions to be added beyond what is currently available, and the quiz will still function correctly.
 
+<details>
+  <summary>Quiz Answers</summary>
+  <ol>
+    <li>Every four weeks</li>
+    <li>Thursday</li>
+    <li>PACE Salary Sacrifice</li>
+    <li>Net Pay</li>
+    <li>MyHR</li>
+    <li>Paul's payday calculator is awesome</li>
+    <li>Two 15 minute paid breaks and a 30 minute unpaid break</li>
+  </ol>
+</details>
+
 ![Quiz Screenshot](https://paulio11.github.io/project-2/documentation/screenshot-quiz.png)
 
 **[About](https://paulio11.github.io/project-2/about.html)**
@@ -288,32 +301,76 @@ There were just a few things I would have liked to have added.
 ### Manual Testing
 
 **Common Elements**
-- Navigation and hover effects.
-- Responsive design.
+<details>
+    <summary>Navigation and hover effects.</summary>
+    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-sidebar.gif">
+</details>
+<br>
 
 **[Home Page](https://paulio11.github.io/project-2)**
-- Navigation and hover effects.
+<details>
+    <summary>Navigation and hover effects.</summary>
+    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-homepage.gif">
+</details>
+<br>
 
 **[Payday Calculator](https://paulio11.github.io/project-2/calculator.html)**
-- Form validation.
-- Reset Form button.
-- `populateCalendar()` function.
-- `calculatePay()` function.
+<details>
+    <summary>Form Validation</summary>
+    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-calc-validation.gif">
+</details>
+<br>
+<details>
+    <summary>Reset Form Button</summary>
+    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-calc-reset.gif">
+</details>
+<br>
+<details>
+    <summary>populateCalendar Function</summary>
+    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-calc-calendar.gif">
+</details>
+<br>
+<details>
+    <summary>calculatePay Function</summary>
+    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-calc-calculate.gif">
+</details>
+<br>
 
 **[Understand Your Pay](https://paulio11.github.io/project-2/understand.html)**
-- Page contents navigation.
-- Scroll to top button.
-- Payday countdown.
+<details>
+    <summary>Page contents navigation</summary>
+    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-understand.gif">
+</details>
+<br>
 
 **[Problems With Your Pay](https://paulio11.github.io/project-2/problems.html)**
-- Page contents navigation.
-- Scroll to top button.
+<details>
+    <summary>Page contents navigation</summary>
+    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-problems.gif">
+</details>
+<br>
 
 **[Quiz](https://paulio11.github.io/project-2/quiz.html)**
-- Starting the quiz.
-- Failing the quiz.
-- Restarting the quiz.
-- Passing the quiz.
+<details>
+    <summary>Starting the quiz</summary>
+    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-quiz-start.gif">
+</details>
+<br>
+<details>
+    <summary>Failing the quiz</summary>
+    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-quiz-failing.gif">
+</details>
+<br>
+<details>
+    <summary>Restarting the quiz</summary>
+    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-quiz-restarting.gif">
+</details>
+<br>
+<details>
+    <summary>Passing the quiz</summary>
+    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-quiz-passing.gif">
+</details>
+<br>
 
 ### Automated Testing
 
