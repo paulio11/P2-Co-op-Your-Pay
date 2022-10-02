@@ -25,10 +25,10 @@
     1. [Main Languages Used](#main-languages-used)
     2. [Other](#other)
 7. [Testing](#testing)
-    1. [Testing User Stories]()
-    2. [Manual Testing]()
-    3. [Automated Testing]()
-    4. [Browser Validation]()
+    1. [Testing User Stories](#testing-user-stories)
+    2. [Manual Testing](#manual-testing)
+    3. [Automated Testing](#automated-testing)
+    4. [Browser Validation](#browser-validation)
 8. [Deployment](#deployment)
     1. [Download Code](#download-code)
     2. [GitHub Pages Deployment Procedure](#github-pages-deployment-procedure)
@@ -319,17 +319,14 @@ There were just a few things I would have liked to have added.
     <summary>Form Validation</summary>
     <img src="https://paulio11.github.io/project-2/documentation/testing/testing-calc-validation.gif">
 </details>
-<br>
 <details>
     <summary>Reset Form Button</summary>
     <img src="https://paulio11.github.io/project-2/documentation/testing/testing-calc-reset.gif">
 </details>
-<br>
 <details>
     <summary>populateCalendar Function</summary>
     <img src="https://paulio11.github.io/project-2/documentation/testing/testing-calc-calendar.gif">
 </details>
-<br>
 <details>
     <summary>calculatePay Function</summary>
     <img src="https://paulio11.github.io/project-2/documentation/testing/testing-calc-calculate.gif">
@@ -355,17 +352,14 @@ There were just a few things I would have liked to have added.
     <summary>Starting the quiz</summary>
     <img src="https://paulio11.github.io/project-2/documentation/testing/testing-quiz-start.gif">
 </details>
-<br>
 <details>
     <summary>Failing the quiz</summary>
     <img src="https://paulio11.github.io/project-2/documentation/testing/testing-quiz-failing.gif">
 </details>
-<br>
 <details>
     <summary>Restarting the quiz</summary>
     <img src="https://paulio11.github.io/project-2/documentation/testing/testing-quiz-restarting.gif">
 </details>
-<br>
 <details>
     <summary>Passing the quiz</summary>
     <img src="https://paulio11.github.io/project-2/documentation/testing/testing-quiz-passing.gif">
@@ -376,7 +370,33 @@ There were just a few things I would have liked to have added.
 
 The [W3C Markup Validator](https://validator.w3.org/) service was used to validate my HTML and CSS code. The [JSHint JavaScript Code Quality Tool](https://jshint.com) was also used to validate my JavaScript code.
 
+| File | Automated Testing Result |
+| ----------- | ----------- |
+| 404.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-404.png) |
+| 500.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-500.png) |
+| about.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-about.png) |
+| calculator.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-calculator.png) |
+| index.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-index.png) |
+| problems.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-problems.png) |
+| quiz.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-quiz.png) |
+| understand.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-understand.png) |
+| style.css | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-css.png) |
+| calculator.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-calculatorjs.png) |
+| payday.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-payday.png) |
+| questions.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-questions.png) |
+| quiz.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-quizjs.png) |
+| sidebar.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-sidebar.png) |
+| top.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-top.png) |
+
 ### Browser Validation
+
+| Browser | Screenshot |
+| ----------- | ----------- |
+| Google Chrome | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-chrome.png) |
+| Microsoft Edge | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-edge.png) |
+| Safari | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-safari.png) |
+| Safari Mobile | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-safarimobile.png) |
+
 
 [Back to top 🔺](#co-op-your-pay)
 
