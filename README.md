@@ -370,23 +370,23 @@ There were just a few things I would have liked to have added.
 
 The [W3C Markup Validator](https://validator.w3.org/) service was used to validate my HTML and CSS code. The [JSHint JavaScript Code Quality Tool](https://jshint.com) was also used to validate my JavaScript code.
 
-| File | Automated Testing Result |
-| ----------- | ----------- |
-| 404.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-404.png) |
-| 500.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-500.png) |
-| about.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-about.png) |
-| calculator.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-calculator.png) |
-| index.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-index.png) |
-| problems.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-problems.png) |
-| quiz.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-quiz.png) |
-| understand.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-understand.png) |
-| style.css | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-css.png) |
-| calculator.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-calculatorjs.png) |
-| payday.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-payday.png) |
-| questions.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-questions.png) |
-| quiz.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-quizjs.png) |
-| sidebar.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-sidebar.png) |
-| top.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-top.png) |
+| File | Automated Testing Result | Notes
+| ----------- | ----------- |----------- |
+| 404.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-404.png) | Pass |
+| 500.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-500.png) | Pass |
+| about.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-about.png) | Pass |
+| calculator.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-calculator.png) | Pass |
+| index.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-index.png) | Pass |
+| problems.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-problems.png) | Pass |
+| quiz.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-quiz.png) | Pass |
+| understand.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-understand.png) | Pass |
+| style.css | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-css.png) | Pass |
+| calculator.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-calculatorjs.png) | Pass |
+| payday.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-payday.png) | Pass |
+| questions.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-questions.png) | `questions` variable is used in `quiz.js` |
+| quiz.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-quizjs.png) | `questions` variable defined in `questions.js` |
+| sidebar.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-sidebar.png) | Pass |
+| top.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-top.png) | Pass |
 
 ### Browser Validation
 
