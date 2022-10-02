@@ -21,18 +21,19 @@
     5. [Lightweight Design](#lightweight-design)
 5.  [Features](#features)
     1. [Unimplemented Features](#unimplemented-features)
-6. [Technologies](#technologies)
+6. [Bugs and Development Issues](#bugs-and-development-issues)
+7. [Technologies](#technologies)
     1. [Main Languages Used](#main-languages-used)
     2. [Other](#other)
-7. [Testing](#testing)
+8. [Testing](#testing)
     1. [Testing User Stories](#testing-user-stories)
     2. [Manual Testing](#manual-testing)
     3. [Automated Testing](#automated-testing)
     4. [Browser Validation](#browser-validation)
-8. [Deployment](#deployment)
+9. [Deployment](#deployment)
     1. [Download Code](#download-code)
     2. [GitHub Pages Deployment Procedure](#github-pages-deployment-procedure)
-9. [Credits and Acknowledgements](#credits-and-acknowledgements)
+10. [Credits and Acknowledgements](#credits-and-acknowledgements)
     1. [Text](#text)
     2. [Images](#images-1)
     3. [Code](#code)
@@ -241,6 +242,16 @@ There were just a few things I would have liked to have added.
 
 [Back to top 🔺](#co-op-your-pay)
 
+## Bugs and Development Issues
+
+Empty inputs on the calculator, specifically the hours worked when left blank, would cause errors while adding up the total hours worked. To fix this, I had to add an `if` statement into the `for` loop in the `addWeek()` function. This would skip the input if there was not a number (`isNaN`) and therefore bypass the issue.
+
+Initially, I wanted to use start and end times instead of hours worked for the calculator - see [Unimplemented Features](#unimplemented-features). This would have made it easier for the user but would have been more work for me. As I am new to JavaScript, I settled on using a single hours input per shift. Deeper study into JavaScript, the `Date` function and the ways you can compare two dates, shows this would have likely have been very possible. 
+
+Foolishly a lot of development time was spent on the username easter egg. Having just learnt about Local Storage, I wanted to try and implement something in this project. Turns out a `prompt`, even if cancelled or left blank, will have a variety of outcomes. To ensure I got what I wanted from it (and after much trial and error), an `if` statement was used to ignore all undesired outputs - `if (namePrompt === 'null' || namePrompt === null || namePrompt === '')`.
+
+[Back to top 🔺](#co-op-your-pay)
+
 ## Technologies
 
 ### Main Languages Used
@@ -294,7 +305,7 @@ There were just a few things I would have liked to have added.
 - As a current employee, I want help with the problems I have with my pay.
     - A whole page is dedicated to problems an employee might possibly have. Containing explanations and solutions.
 - As a current employee, I want to know when payday is.
-    - Using the JavaScript Date function and an array containing future paydays, the website can show the next payday and a countdown.
+    - Using the JavaScript `Date` function and an array containing future paydays, the website can show the next payday and a countdown.
 - As a current employee, I want help keeping track and calculating my pay.
     - The payday calculator is the main interactive element of the website. Clear and simple to use. An employee can enter their details here and see their estimated pay.
 
