@@ -6,33 +6,34 @@
 
 ## Contents 
 
-1. [Introduction](https://github.com/paulio11/project-2#introduction)
-2. [The User Experience](https://github.com/paulio11/project-2#the-user-experience)
-    1. [User Goals](https://github.com/paulio11/project-2#user-goals)
-3. [Development Planning](https://github.com/paulio11/project-2#development-planning)
-    1. [Strategy](https://github.com/paulio11/project-2#strategy)
-    2. [Site Map](https://github.com/paulio11/project-2#site-map)
-    3. [Wireframes](https://github.com/paulio11/project-2#wireframes)
-4. [Design](https://github.com/paulio11/project-2#design)
-    1. [Color Scheme](https://github.com/paulio11/project-2#color-scheme)
-    2. [Color Palette](https://github.com/paulio11/project-2#color-palette)
-    3. [Typography](https://github.com/paulio11/project-2#typography)
-    4. [Images](https://github.com/paulio11/project-2#images)
-    5. [Lightweight Design](https://github.com/paulio11/project-2#lightweight-design)
-5.  [Features](https://github.com/paulio11/project-2#features)
-    1. [Unimplemented Features](https://github.com/paulio11/project-2#unimplemented-features)
-6. [Bugs and Other Development Issues](https://github.com/paulio11/project-2#unimplemented-features)
-7. [Technologies](https://github.com/paulio11/project-2#technologies)
-    1. [Main Languages Used](https://github.com/paulio11/project-2#main-languages-used)
-    2. [Other](https://github.com/paulio11/project-2#other)
-8. [Testing](https://github.com/paulio11/project-2#testing)
-9. [Deployment](https://github.com/paulio11/project-2#deployment)
-    1. [Download Code](https://github.com/paulio11/project-2#download-code)
-    2. [GitHub Pages Deployment Procedure](https://github.com/paulio11/project-2#github-pages-deployment-procedure)
-10. [Credits and Acknowledgements](https://github.com/paulio11/project-2#credits-and-acknowledgements)
-    1. [Text](https://github.com/paulio11/project-2#text)
-    2. [Images](https://github.com/paulio11/project-2#images-1)
-    3. [Acknowledgements](https://github.com/paulio11/project-2#acknowledgements)
+1. [Introduction](#introduction)
+2. [The User Experience](#the-user-experience)
+    1. [User Goals](#user-goals)
+3. [Development Planning](#development-planning)
+    1. [Strategy](#strategy)
+    2. [Site Map](#site-map)
+    3. [Wireframes](#wireframes)
+4. [Design](#design)
+    1. [Color Scheme](#color-scheme)
+    2. [Color Palette](#color-palette)
+    3. [Typography](#typography)
+    4. [Images](#images)
+    5. [Lightweight Design](#lightweight-design)
+5.  [Features](#features)
+    1. [Unimplemented Features](#unimplemented-features)
+6. [Bugs and Other Development Issues](##bugs-and-other-development-issues)
+7. [Technologies](#technologies)
+    1. [Main Languages Used](#main-languages-used)
+    2. [Other](#other)
+8. [Testing](#testing)
+9. [Deployment](#deployment)
+    1. [Download Code](#download-code)
+    2. [GitHub Pages Deployment Procedure](#github-pages-deployment-procedure)
+10. [Credits and Acknowledgements](#credits-and-acknowledgements)
+    1. [Text](#text)
+    2. [Images](#images-1)
+    3. [Code](#code)
+    3. [Acknowledgements](#acknowledgements)
 
 ## Introduction
 This website serves as a tool for employees of The Co-op - where a user can find help understanding their pay, calculating their pay, and solving any potential issues with their income.
@@ -154,7 +155,11 @@ These pages contain the following common features:
 
 Neither the `<header>` nor `<footer>` are fixed to the top/bottom of the screen, as I believed it would have taken up too much screen space - especially on a smaller device. To remedy the navigation issues caused on the taller home page, I added a simple javascript scroll back to the top button. The javascript code for this is in the sidebar.js file, as it is loaded on every page.
 
-On pages with contents (understand.html and problems.html) the css rule `scroll-behavior: smooth;` allows the user to better understand where they are navigating to.
+**Scrolling**
+- On longer pages (calculator.html, understand.html and problems.html) the css rule `scroll-behavior: smooth;` allows the user to better understand where they are navigating to when using links within the page.
+- A *back to top* button appears when scrolling below the header to further assist navigation. The JavaScript code that makes this work can be seen in the file [top.js](https://github.com/paulio11/project-2/blob/main/assets/js/top.js).
+
+![Back to Top Button Screenshot](https://paulio11.github.io/project-2/documentation/screenshot-topbutton.png)
 
 _**[Home Page](https://paulio11.github.io/project-2)**_
 
@@ -298,6 +303,9 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 
 ### Images
 - Co-op logo taken from [Co-op Assets](https://www.co-operative.coop/media/assets).
+
+### Code
+- Code for the [scroll to top button](https://github.com/paulio11/project-2/blob/main/assets/js/top.js) is based on a [How To tutorial at W3 Schools](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp).
 
 ### Acknowledgements
 
