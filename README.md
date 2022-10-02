@@ -12,7 +12,7 @@
 3. [Development Planning](https://github.com/paulio11/project-2#development-planning)
     1. [Strategy](https://github.com/paulio11/project-2#strategy)
     2. [Site Map](https://github.com/paulio11/project-2#site-map)
-    3. [Wireframes](https://github.com/paulio11/project-2#wireframe)
+    3. [Wireframes](https://github.com/paulio11/project-2#wireframes)
 4. [Design](https://github.com/paulio11/project-2#design)
     1. [Color Scheme](https://github.com/paulio11/project-2#color-scheme)
     2. [Color Palette](https://github.com/paulio11/project-2#color-palette)
@@ -237,7 +237,7 @@ There were just a few things I would have liked to have added.
 - [Google Fonts](https://fonts.google.com/)
     - Fonts were imported from Google Fonts, see Typography section of readme above.
 - [Font Awesome](https://fontawesome.com/)
-    - Social and other icons used in my project taken from Font Awesome.
+    - Icons used in my project taken from Font Awesome.
 - [GitHub](https://github.com/)
     - Used to store files, changes, and host the page.
 - [GitPod](https://www.gitpod.io/)
@@ -285,7 +285,7 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 6. Upon selection, the page will automatically refresh meaning that the website is now deployed.
 7. Scroll back down to the "Pages" section to retrieve the deployed link.
 
-**Note:** when this website is hosted at a different URL - the head link to the stylesheet and favicon will need to be manually changed to correctly style the error pages 404.html and 500.html.
+**Note:** when this website is hosted at a different URL - the image source for the logo, and the head link to the stylesheet and favicon will need to be manually changed to correctly style the error pages 404.html and 500.html.
 
 [Back to top 🔺](#co-op-your-pay)
 
