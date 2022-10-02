@@ -43,7 +43,7 @@ This project is in no way associated with The Co-op. Therefore, it should not be
 
 Co-op Your Pay is my second milestone project required to complete my Diploma in Full Stack Software Development at The Code Institute. This project required me to showcase my newly learned JavaScript skills paired with HTML and CSS to create something interactive, valuable to the end user, and responsive.
 
-[Back to top 🔺](#)
+[Back to top 🔺](#co-op-your-pay)
 
 ## The User Experience
 The ideal user for this website is:
@@ -60,7 +60,7 @@ The ideal user for this website is:
 - I want to know when payday is.
 - I want help with keeping track and calculating my pay.
 
-[Back to top 🔺](#)
+[Back to top 🔺](#co-op-your-pay)
 
 ## Development Planning
 To create an interactive website that allows users to learn more about their pay and help them understand and calculate what they will receive.
@@ -104,7 +104,7 @@ With the information above, I came up with the website hierarchical structure. T
 
 ![Website wireframes](https://paulio11.github.io/project-2/documentation/wireframe.jpg)
 
-[Back to top 🔺](#)
+[Back to top 🔺](#co-op-your-pay)
 
 ## Design
 
@@ -123,7 +123,7 @@ A single image is used - the Co-op logo, shown on the home page and in the heade
 ### Lightweight Design
 The whole site is minimal and lightweight. A single font import keeps the required resources low. A single image ensures the combined filesizes remain small. Together they will enable more users and devices to use the website, even on a mobile connection.
 
-[Back to top 🔺](#)
+[Back to top 🔺](#co-op-your-pay)
 
 ## Features
 The Calculator, Understand, Problems, Quiz, and about pages have a consistent style. They are built from the ground up to be simple and responsive. Viewable on all screen sizes with a `min-width` of 300px.
@@ -139,6 +139,8 @@ These pages contain the following common features:
 - Clicking the menu button in the header will open the navigation menu. Sliding in from the right of the screen using css translation. The button for the menu and the menu’s close button are controlled by javascript.
 - Links to all pages on the website. Communicated to the user by a `:hover` effect that changes the `background-colour` and the cursor to pointer.
 - The JavaScript used to make this work can be found in [sidebar.js](https://github.com/paulio11/project-2/blob/main/assets/js/sidebar.js).
+
+![Sidebar Screenshot](https://paulio11.github.io/project-2/documentation/screenshot-sidebar.png)
 
 **The Page Title**
 - A `<h1>` element.
@@ -158,6 +160,8 @@ _**[Home Page](https://paulio11.github.io/project-2)**_
 
 A simple landing page is all that is needed for a visiting user: the Co-op logo, website title, and a small sentence describing the purpose of the website. Below is the main navigation menu, a copy of what is in the sidebar on other pages.
 
+![Home Page Screenshot](https://paulio11.github.io/project-2/documentation/screenshot-index.png)
+
 _**[Payday Calculator](https://paulio11.github.io/project-2/calculator.html)**_
 
 The main interactive part of the whole website. This page consists of:
@@ -171,6 +175,8 @@ The main interactive part of the whole website. This page consists of:
 - A calculate pay button calls the `handeSubmit()` functions. This shows the results below.
 - Calculator Results. Shown once the user fills out the form and submits. This contains several `<span>` elements that are filled by calculator.js.
 
+![Payday Calculator Screenshot](https://paulio11.github.io/project-2/documentation/screenshot-calculator.png)
+
 _**[Understand Your Pay](https://paulio11.github.io/project-2/understand.html)**_ *and* _**[Problems With Your Pay](https://paulio11.github.io/project-2/problems.html)**_
 
 Both the *Understand Your Pay* and *Problems With Your Pay* pages start with page contents. An unordered list with a left border to connect them stylistically. Every list item links to a section within each page.
@@ -178,6 +184,10 @@ Both the *Understand Your Pay* and *Problems With Your Pay* pages start with pag
 Below is a simple display of information. Each bit of information or frequently asked question is in its own `<div>` container so it can be navigated to via the page contents and styled to stand apart from each other.
 
 At the top of the *Understand Your Pay* page is a countdown to the next payday. This is is the output of an if statement comparing the current date with a list of paydays from an array within [payday.js](https://github.com/paulio11/project-2/blob/main/assets/js/payday.js).
+
+![Understand Your Pay Screenshot](https://paulio11.github.io/project-2/documentation/screenshot-understand.png)
+
+![Problems With Your Pay Screenshot](https://paulio11.github.io/project-2/documentation/screenshot-problems.png)
 
 _**[Quiz](https://paulio11.github.io/project2/quiz.html)**_
 
@@ -187,13 +197,19 @@ The instruction box uses the same styles as the information on the *Understand Y
 
 The innerText of the created elements comes from reading the value of the (question) `number` variable to get the question text. A `for` loop creates multiple elements with `click` event listeners to show the multiple choice answers. Styles are applied when the choices are created, giving them a `:hover` style. When an option is clicked, the hover style is removed and then the relevant style is applied, whether the selected answer was correct or incorrect. Additionally, the click event displays a continue button, either functioning as the *Next Question*, or *Check My Score* buttons based on the progress through the quiz defined by `questions.length`. This enables more questions to be added beyond what is currently available, and the quiz will still function correctly.
 
+![Quiz Screenshot](https://paulio11.github.io/project-2/documentation/screenshot-quiz.png)
+
 _**[About](https://paulio11.github.io/project-2/about.html)**_
 
 Using the same `<div class="box">` for the information presented in understand.html and problems.html to display a simple about this website box.
 
+![About Screenshot](https://paulio11.github.io/project-2/documentation/screenshot-about.png)
+
 _**[Error 404](https://paulio11.github.io/project-2/404.html)**_ *and* _**[Error 500](https://paulio11.github.io/project-2/500.html)**_
 
 The error pages are a copy of the design used for the home page. Containing the website logo, title, an explanation of the error and a Go Back button. The go back button jumps the user 1 page back in their history using JavaScript. The left arrow is from [Font Awesome](https://fontawesome.com/).
+
+![Error Page Screenshot](https://paulio11.github.io/project-2/documentation/screenshot-error.png)
 
 ### Unimplemented Features
 There were just a few things I would have liked to have added.
@@ -202,11 +218,11 @@ There were just a few things I would have liked to have added.
 - **Calculator Improvemenets** - An easier way for employees to use the calculator would be to use what they already know, i.e. the shift *Start Time* and *End Time*. This way, a user wouldn’t have to calculate the length of the shift and instead just input what time they started and finished work. Ultimately the javascript calculation would remain the same but would have required an extra step at the start - working out the difference in the two date (time) values and using that instead of a simple hours value.
 - **Payslip Information** - Another idea I wanted to implement was to explain the payslip in more detail - to expand the information available to the user further. A page dedicated to the payslip layout where a clickable, interactive example is shown. Clicking elements of the payslip would reveal more detailed information. I passed on this idea early on as it would have proven to be a relatively large amount of work to make something look like this clearly viewable on a smaller screen.
 
-[Back to top 🔺](#)
+[Back to top 🔺](#co-op-your-pay)
 
 ## Bugs and Other Development Issues
 
-[Back to top 🔺](#)
+[Back to top 🔺](#co-op-your-pay)
 
 ## Technologies
 
@@ -243,11 +259,11 @@ There were just a few things I would have liked to have added.
 - [JSHint JavaScript Code Quality Tool](https://jshint.com)
     - Used to validated JavaScript code.
 
-[Back to top 🔺](#)
+[Back to top 🔺](#co-op-your-pay)
 
 ## Testing
 
-[Back to top 🔺](#)
+[Back to top 🔺](#co-op-your-pay)
 
 ## Deployment
 
@@ -271,7 +287,7 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 
 **Note:** when this website is hosted at a different URL - the head link to the stylesheet and favicon will need to be manually changed to correctly style the error pages 404.html and 500.html.
 
-[Back to top 🔺](#)
+[Back to top 🔺](#co-op-your-pay)
 
 ## Credits and Acknowledgements 
 
@@ -289,4 +305,4 @@ Thanks to my mentor [Oluwaseun Owonikoko](https://github.com/seunkoko) and the s
 
 I would also like to thank fellow CI student [Rebecca Rayner](https://github.com/Irishbecky91). Her excellent project readme was the basis of my own readme's structure.
 
-[Back to top 🔺](#)
+[Back to top 🔺](#co-op-your-pay)
