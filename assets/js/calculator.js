@@ -110,7 +110,7 @@ function populateCalendar() {
   }
 
   //looks at last digit of date number and adds correct suffix to the string.
-  const dateSuffix = (date) => { 
+  const dateSuffix = (date) => {
     var dateString = date.toString();
     var lastDigit = dateString.slice(-1);
     var secondLast = dateString.length > 1 ? dateString.slice(-2, -1) : null;
@@ -120,7 +120,7 @@ function populateCalendar() {
     if (lastDigit == '2') return 'nd';
     if (lastDigit == '3') return 'rd';
     return 'th';
- }
+  }
 
   //populates empty calendar with correct dates from array into <span class="date">.
   let dates = document.getElementsByClassName('date');
@@ -268,7 +268,7 @@ function handleSubmit(event) {
 /**
  * Clicking the clear form button will also hide the results div.
  */
- function hideResults() {
+function hideResults() {
 
   let resultsDiv = document.getElementById('results');
   resultsDiv.style.display = "none";
@@ -306,6 +306,6 @@ function fillForm() {
   document.getElementsByClassName('hours')[24].value = 8;
   document.getElementsByClassName('hours')[25].value = 6.5;
   document.getElementsByClassName('hours')[26].value = 9;
-  document.getElementsByClassName('hours')[27].value = 8;  
+  document.getElementsByClassName('hours')[27].value = 8;
 
 }

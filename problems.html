@@ -1,138 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Paul Young">
-  <meta name="tags" content="calculator, co-op, payday, payments, deductions, quiz">
-  <meta name="description" content="Co-op - Your Pay. A website to help you with your pay.">
-  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>Problems With Your Pay - Your Pay</title>
-</head>
-
-<body>
-  <!-- overlay start -->
-  <div id="sidebar-container">
-    <!-- sidebar start -->
-    <nav id="sidebar">
-      <span id="close-menu">Close menu <i class="fa-regular fa-circle-xmark x-close"></i></span>
-      <h1 class="nav-heading">Main menu</h1>
-      <ul>
-        <li><a href="calculator.html">Payday Calculator</a></li>
-        <li><a href="understand.html">Understand Your Pay</a></li>
-        <li class="active-nav"><a href="#">Problems With Your Pay</a></li>
-        <li><a href="quiz.html">Quiz</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <!-- sidebar end -->
-  </div>
-  <!-- overlay end -->
-  <header>
-    <a href="index.html"><img src="assets/images/coop-logo.svg" id="logo" alt="coop logo" width="32px"
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Paul Young">
+    <meta name="tags" content="calculator, co-op, payday, payments, deductions, quiz">
+    <meta name="description" content="Co-op - Your Pay. A website to help you with your pay.">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Problems With Your Pay - Your Pay</title>
+  </head>
+  <body>
+    <!-- overlay start -->
+    <div id="sidebar-container">
+      <!-- sidebar start -->
+      <nav id="sidebar">
+        <span id="close-menu">Close menu <i class="fa-regular fa-circle-xmark x-close"></i></span>
+        <h1 class="nav-heading">Main menu</h1>
+        <ul>
+          <li><a href="calculator.html">Payday Calculator</a></li>
+          <li><a href="understand.html">Understand Your Pay</a></li>
+          <li class="active-nav"><a href="#">Problems With Your Pay</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <!-- sidebar end -->
+    </div>
+    <!-- overlay end -->
+    <header>
+      <a href="index.html"><img src="assets/images/coop-logo.svg" id="logo" alt="coop logo" width="32px"
         height="32px"></a>
-    <div id="user-menu">
-      <div id="user-name">
-        <span>Hello <span id="name-span">Employee</span>!</span>
-        <i class="fa-solid fa-user"></i>
+      <div id="user-menu">
+        <div id="user-name">
+          <span>Hello <span id="name-span">Employee</span>!</span>
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div id="menu-button">
+          <span class="spaced">Menu</span>
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
-      <div id="menu-button">
-        <span class="spaced">Menu</span>
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </div>
-  </header>
-  <div id="background">
-    <div id="main-content">
-      <!-- scroll to top button -->
-      <button id="top-button" onclick="toTop()"><i class="fa-solid fa-arrow-up"></i></button>
-      <h1>Problems With Your Pay</h1>
-      <!-- page contents start -->
-      <section id="contents" class="box">
-        <p>Use this page to help if you think your pay is wrong.</p>
-        <br>
-        <ul class="bullet-list contents">
-          <li><a href="#problem1">You think you've been paid the wrong amount</a></li>
-          <li><a href="#problem2">Your overtime hasn't been approved in time</a></li>
-          <li><a href="#problem3">You're missing sick pay</a></li>
-          <li><a href="#problem4">You've paid too much tax</a></li>
-          <li><a href="#problem5">You've not been paid at all</a></li>
-          <li><a href="#problem6">You're repaying a debt or court order</a></li>
-          <li><a href="#problem7">You're repaying a student loan</a></li>
-        </ul>
-      </section>
-      <!-- page contents end -->
-      <div class="box" id="problem1">
-        <h2>You think you've been paid the wrong amount</h2>
-        <p>Speak with your manager first to check that any overtime, holiday pay or sick pay has been approved in time.
-        </p>
-      </div>
-      <div class="box" id="problem2">
-        <h2>If your overtime hasn't been approved in time</h2>
-        <p>It will be paid into your next payslip.</p>
-      </div>
-      <div class="box" id="problem3">
-        <h2>If you're missing sick pay</h2>
-        <p>Check your contract to see what sick pay you're entitled to. In some roles you need to be off for at least 4
-          consecutive days before you get any sick pay.</p>
-        <br>
-        <p>Sick pay is paid "in arrears" - this means it will go into your next payslip if you were off in the last 2
-          weeks before the current payday.</p>
-      </div>
-      <div class="box" id="problem4">
-        <h2>If you've paid too much tax</h2>
-        <p>Co-op can't change your tax code or refund you if you've paid too much.</p>
-        <br>
-        <p>Check the <a href="https://www.gov.uk/check-income-tax-current-year" target="_blank"
+    </header>
+    <div id="background">
+      <div id="main-content">
+        <!-- scroll to top button -->
+        <button id="top-button" onclick="toTop()"><i class="fa-solid fa-arrow-up"></i></button>
+        <h1>Problems With Your Pay</h1>
+        <!-- page contents start -->
+        <section id="contents" class="box">
+          <p>Use this page to help if you think your pay is wrong.</p>
+          <br>
+          <ul class="bullet-list contents">
+            <li><a href="#problem1">You think you've been paid the wrong amount</a></li>
+            <li><a href="#problem2">Your overtime hasn't been approved in time</a></li>
+            <li><a href="#problem3">You're missing sick pay</a></li>
+            <li><a href="#problem4">You've paid too much tax</a></li>
+            <li><a href="#problem5">You've not been paid at all</a></li>
+            <li><a href="#problem6">You're repaying a debt or court order</a></li>
+            <li><a href="#problem7">You're repaying a student loan</a></li>
+          </ul>
+        </section>
+        <!-- page contents end -->
+        <div class="box" id="problem1">
+          <h2>You think you've been paid the wrong amount</h2>
+          <p>Speak with your manager first to check that any overtime, holiday pay or sick pay has been approved in time.
+          </p>
+        </div>
+        <div class="box" id="problem2">
+          <h2>If your overtime hasn't been approved in time</h2>
+          <p>It will be paid into your next payslip.</p>
+        </div>
+        <div class="box" id="problem3">
+          <h2>If you're missing sick pay</h2>
+          <p>Check your contract to see what sick pay you're entitled to. In some roles you need to be off for at least 4
+            consecutive days before you get any sick pay.
+          </p>
+          <br>
+          <p>Sick pay is paid "in arrears" - this means it will go into your next payslip if you were off in the last 2
+            weeks before the current payday.
+          </p>
+        </div>
+        <div class="box" id="problem4">
+          <h2>If you've paid too much tax</h2>
+          <p>Co-op can't change your tax code or refund you if you've paid too much.</p>
+          <br>
+          <p>Check the <a href="https://www.gov.uk/check-income-tax-current-year" target="_blank"
             aria-label="Go to gov.uk (opens in a new tab)">HMRC website</a> to see
-          how much tax you should be paying. <a
-            href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/income-tax-enquiries-for-individuals-pensioners-and-employees"
-            target="_blank" aria-label="Go to gov.uk (opens in a new tab)">Contact HMRC</a> directly if you still think
-          your payslip is wrong.</p>
-      </div>
-      <div class="box" id="problem5">
-        <h2>If you've not been paid at all</h2>
-        <p>Call HR Services on 0330 606 1001.</p>
-        <br>
-        <p>You may not have been paid because:</p>
-        <ul class="bullet-list">
-          <li>You've not put your bank details into MyHR</li>
-          <li>Your bank details are wrong on MyHR</li>
-          <li>Your sick pay as run out</li>
-          <li>You're a new starter and have missed the cut off date for this pay day</li>
-        </ul>
-      </div>
-      <div class="box" id="problem6">
-        <h2>If you're repaying a debt or court order</h2>
-        <p>Co-op can't change the amount taken from your wages.</p>
-        <br>
-        <p>You can <a href="https://www.gov.uk/debt-payments-from-your-wages" target="_blank"
+            how much tax you should be paying. <a
+              href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/income-tax-enquiries-for-individuals-pensioners-and-employees"
+              target="_blank" aria-label="Go to gov.uk (opens in a new tab)">Contact HMRC</a> directly if you still think
+            your payslip is wrong.
+          </p>
+        </div>
+        <div class="box" id="problem5">
+          <h2>If you've not been paid at all</h2>
+          <p>Call HR Services on 0330 606 1001.</p>
+          <br>
+          <p>You may not have been paid because:</p>
+          <ul class="bullet-list">
+            <li>You've not put your bank details into MyHR</li>
+            <li>Your bank details are wrong on MyHR</li>
+            <li>Your sick pay as run out</li>
+            <li>You're a new starter and have missed the cut off date for this pay day</li>
+          </ul>
+        </div>
+        <div class="box" id="problem6">
+          <h2>If you're repaying a debt or court order</h2>
+          <p>Co-op can't change the amount taken from your wages.</p>
+          <br>
+          <p>You can <a href="https://www.gov.uk/debt-payments-from-your-wages" target="_blank"
             aria-label="Go to gov.uk (opens in a new tab)">apply to HMRC</a> to have
-          your payments changed if you can't afford them
-          or want to pay the debt off quicker.</p>
-      </div>
-      <div class="box" id="problem7">
-        <h2>If you're repaying a student loan</h2>
-        <p>Co-op can't change the amount taken from your wages.</p>
-        <br>
-        <p><a href="https://www.gov.uk/repaying-your-student-loan/what-you-pay" target="_blank"
+            your payments changed if you can't afford them
+            or want to pay the debt off quicker.
+          </p>
+        </div>
+        <div class="box" id="problem7">
+          <h2>If you're repaying a student loan</h2>
+          <p>Co-op can't change the amount taken from your wages.</p>
+          <br>
+          <p><a href="https://www.gov.uk/repaying-your-student-loan/what-you-pay" target="_blank"
             aria-label="Go to gov.uk (opens in a new tab)">Check the HMRC
-            website</a> to see how much you need to be earning before you start paying back your student loan.</p>
+            website</a> to see how much you need to be earning before you start paying back your student loan.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-  <footer>
-    <span>Co-op Your Pay - website created by Paul Young.</span>
-  </footer>
-  <!-- font awesome script -->
-  <script src="https://kit.fontawesome.com/9446ef5fe5.js" crossorigin="anonymous"></script>
-  <!-- sidebar menu behaviour script -->
-  <script src="assets/js/sidebar.js"></script>
-  <!-- back to top button script -->
-  <script src="assets/js/top.js"></script>
-</body>
-
+    <footer>
+      <span>Co-op Your Pay - website created by Paul Young.</span>
+    </footer>
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/9446ef5fe5.js" crossorigin="anonymous"></script>
+    <!-- sidebar menu behaviour script -->
+    <script src="assets/js/sidebar.js"></script>
+    <!-- back to top button script -->
+    <script src="assets/js/top.js"></script>
+  </body>
 </html>

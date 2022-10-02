@@ -151,7 +151,7 @@ function endQuiz() {
  * Restarts quiz by reloading page.
  */
 function restartQuiz() {
-  
+
   location.href = 'quiz.html';
 
 }

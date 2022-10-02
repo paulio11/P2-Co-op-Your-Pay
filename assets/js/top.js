@@ -2,7 +2,9 @@
 //code from w3schools - https://www.w3schools.com/howto/howto_js_scroll_to_top.asp.
 
 let topButton = document.getElementById('top-button');
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction()
+}
 
 /**
  * Shows or hides scroll to top button based on scrolled distance from top of page.
