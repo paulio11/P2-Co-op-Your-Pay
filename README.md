@@ -133,7 +133,7 @@ These pages contain the following common features:
 **Header**
 - An area at the top of each page containing the logo, a username and a button to open the navigation menu.
 - The icons for the user and menu are from [Font Awesome](https://fontawesome.com/).
-- Within the header, if the user clicks on "Hello Employee" a JavaScript prompt appears asking for the user's name. This will save the input in local storage and display on each future page visit. Just a little easter egg - isn't local storage fun!
+- Within the header, if the user clicks on "Hello Employee" a JavaScript prompt appears asking for the user's name. This will save the input in local storage and display on each future page visit. Just a little easter egg - local storage fun!
 
 **Sidebar**
 - Clicking the menu button in the header will open the navigation menu. Sliding in from the right of the screen using css translation. The button for the menu and the menu’s close button are controlled by javascript.
@@ -255,7 +255,7 @@ Project written and developed in GitPod, which was then used to commit changes a
 
 ### Download Code
 
-To download a copy of this project and all required assets click the green **Code** button above the file tree at the top. Then **Download ZIP**.
+To download a copy of this project and all required assets click the green **Code** button above the file tree at the top. Then **Download ZIP**. Alternatively click [here](https://github.com/paulio11/project-2/archive/refs/heads/main.zip).
 
 ### GitHub Pages Deployment Procedure
 
@@ -269,7 +269,7 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 6. Upon selection, the page will automatically refresh meaning that the website is now deployed.
 7. Scroll back down to the "Pages" section to retrieve the deployed link.
 
-**Note:** when this website is hosted at a different URL - the head link to the stylesheet will need to be manually changed to correctly style the error pages 404.html and 500.html.
+**Note:** when this website is hosted at a different URL - the head link to the stylesheet and favicon will need to be manually changed to correctly style the error pages 404.html and 500.html.
 
 [Back to top 🔺](#)
 
@@ -285,7 +285,7 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 
 ### Acknowledgements
 
-I would like to thank my mentor [Oluwaseun Owonikoko](https://github.com/seunkoko) and the students of class June 2022 for their help and suggestions throughout the project.
+Thanks to my mentor [Oluwaseun Owonikoko](https://github.com/seunkoko) and the students from class June 2022 for their help and suggestions throughout the project.
 
 I would also like to thank fellow CI student [Rebecca Rayner](https://github.com/Irishbecky91). Her excellent project readme was the basis of my own readme's structure.
 
