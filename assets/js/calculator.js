@@ -120,7 +120,7 @@ function populateCalendar() {
     if (lastDigit == '2') return 'nd';
     if (lastDigit == '3') return 'rd';
     return 'th';
-  }
+  };
 
   //populates empty calendar with correct dates from array into <span class="date">.
   let dates = document.getElementsByClassName('date');
@@ -176,7 +176,7 @@ function getWage() {
  */
 function addWeek(week) {
 
-  let thisWeek = document.getElementById(week)
+  let thisWeek = document.getElementById(week);
   let thisWeekHours = thisWeek.getElementsByClassName('hours');
   let thisWeekHoursArray = [];
   let thisWeeksSum = 0;

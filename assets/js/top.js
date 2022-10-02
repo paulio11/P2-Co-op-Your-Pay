@@ -3,8 +3,8 @@
 
 let topButton = document.getElementById('top-button');
 window.onscroll = function () {
-  scrollFunction()
-}
+  scrollFunction();
+};
 
 /**
  * Shows or hides scroll to top button based on scrolled distance from top of page.
