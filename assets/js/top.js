@@ -18,6 +18,9 @@ function scrollFunction() {
   }
 }
 
+//clicking the back to top button triggers the toTop function.
+document.getElementById('top-button').addEventListener('click', toTop);
+
 /**
  * Scrolls page back to top.
  */
