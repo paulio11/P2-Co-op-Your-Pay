@@ -388,7 +388,7 @@ Foolishly a lot of development time was spent on the username easter egg. Having
 
 ### Automated Testing
 
-The [W3C Markup Validator](https://validator.w3.org/) service was used to validate my HTML and CSS code. The [JSHint JavaScript Code Quality Tool](https://jshint.com) was also used to validate my JavaScript code.
+The [W3C Markup Validator](https://validator.w3.org/) service was used to validate my HTML and CSS code. The [JSHint JavaScript Code Quality Tool](https://jshint.com) was also used to validate my JavaScript code. 
 
 | File | Automated Testing Result | Notes
 | ----------- | ----------- |----------- |
@@ -407,6 +407,18 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 | quiz.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-quizjs.png) | `questions` variable defined in `questions.js` |
 | sidebar.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-sidebar.png) | Pass |
 | top.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-top.png) | Pass |
+
+Also included are the results of Lighthouse. Scoring 100 in every category on every page.
+
+| Page | Lighthouse Result|
+| ----------- | ----------- |
+| Error pages | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/lighthouse-error.png) |
+| index.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/lighthouse-index.png) |
+| understand.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/lighthouse-understand.png) |
+| problems.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/lighthouse-problems.png) |
+| quiz.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/lighthouse-quiz.png) |
+| calculator.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/lighthouse-calculator.png) |
+| about.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/lighthouse-about.png) |
 
 ### Browser Validation
 
