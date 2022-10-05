@@ -58,11 +58,15 @@ The ideal user for this website is:
 
 ### User Goals
 **New employee goals:**
-- As a new employee, I want to quickly navigate to what I need.
+
+As a new employee:
+- I want to quickly navigate to what I need.
 - I want the information to be clear, relevant and accurate.
 
 **Current employee goals:**
-- As a current employee, I want help with the problems I have with my pay.
+
+As a current employee:
+- I want help with the problems I have with my pay.
 - I want to know when payday is.
 - I want help with keeping track and calculating my pay.
 
