@@ -30,6 +30,7 @@
     2. [Manual Testing](#manual-testing)
     3. [Automated Testing](#automated-testing)
     4. [Browser Validation](#browser-validation)
+    5. [User Testing](#user-testing)
 9. [Deployment](#deployment)
     1. [Download Code](#download-code)
     2. [GitHub Pages Deployment Procedure](#github-pages-deployment-procedure)
@@ -412,6 +413,11 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 | Safari | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-safari.png) |
 | Safari Mobile | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-safarimobile.jpeg) |
 
+### User Testing
+
+Many fellow Code Institute helped test the site during various stages of development. Nothing major was reported besides spelling and grammatical errors. 
+
+My mentor [Oluwaseun Owonikoko](https://github.com/seunkoko) helped point out issues with the outputs of the username prompt when the user would either cancel out or hit okay with a blank input. Other numerous suggestions were made throughout the project, too many to remember.
 
 [Back to top 🔺](#co-op-your-pay)
 
