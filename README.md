@@ -451,6 +451,7 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 
 ### Code
 - Code for the [scroll to top button](https://github.com/paulio11/project-2/blob/main/assets/js/top.js) is based on a [How To tutorial at W3 Schools](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp).
+- Lines 112 to 125 in `calculator.js` created with help from a friend Dan Oak, adjusted to suit my needs and to fix an oversight of his.
 
 ### Acknowledgements
 

@@ -110,11 +110,13 @@ function populateCalendar() {
   }
 
   //looks at last digit of date number and adds correct suffix to the string.
+  //arrow function code from friend Dan Oak.
   const dateSuffix = (date) => {
     var dateString = date.toString();
     var lastDigit = dateString.slice(-1);
     var secondLast = dateString.length > 1 ? dateString.slice(-2, -1) : null;
     //for dates 11th, 12th, and 13th.
+    //this is my addition, fixing an oversight in his code.
     if (secondLast && secondLast == '1') return 'th';
     if (lastDigit == '1') return 'st';
     if (lastDigit == '2') return 'nd';
