@@ -33,7 +33,7 @@ const questions = [{
 },
 {
   number: 4,
-  questionText: 'Which of the following payslip payments represents the ammount you have been paid after all deductions?',
+  questionText: 'Which of the following payslip payments represents the amount you have been paid after all deductions?',
   options: [
     'Annual Salary',
     'Net Pay',
