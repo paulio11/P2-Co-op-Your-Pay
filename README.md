@@ -1,46 +1,47 @@
 # Co-op Your Pay
 
-![Image of website on multiple devices](https://paulio11.github.io/project-2/documentation/hero-img.png)
+![Image of website on multiple devices](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/hero-img.png)
 
-[Link to live GitHub deployment](https://paulio11.github.io/project-2/)
+[Link to live GitHub deployment](https://paulio11.github.io/P2-Co-op-Your-Pay/)
 
-## Contents 
+## Contents
 
 1. [Introduction](#introduction)
 2. [The User Experience](#the-user-experience)
-    1. [User Goals](#user-goals)
+   1. [User Goals](#user-goals)
 3. [Development Planning](#development-planning)
-    1. [Strategy](#strategy)
-    2. [Site Map](#site-map)
-    3. [Wireframes](#wireframes)
+   1. [Strategy](#strategy)
+   2. [Site Map](#site-map)
+   3. [Wireframes](#wireframes)
 4. [Design](#design)
-    1. [Color Scheme](#color-scheme)
-    2. [Color Palette](#color-palette)
-    3. [Typography](#typography)
-    4. [Images](#images)
-    5. [Lightweight Design](#lightweight-design)
-5.  [Features](#features)
-    1. [Unimplemented Features](#unimplemented-features)
+   1. [Color Scheme](#color-scheme)
+   2. [Color Palette](#color-palette)
+   3. [Typography](#typography)
+   4. [Images](#images)
+   5. [Lightweight Design](#lightweight-design)
+5. [Features](#features)
+   1. [Unimplemented Features](#unimplemented-features)
 6. [Bugs and Development Issues](#bugs-and-development-issues)
 7. [Technologies](#technologies)
-    1. [Main Languages Used](#main-languages-used)
-    2. [Other](#other)
+   1. [Main Languages Used](#main-languages-used)
+   2. [Other](#other)
 8. [Testing](#testing)
-    1. [Testing User Stories](#testing-user-stories)
-    2. [Manual Testing](#manual-testing)
-    3. [Automated Testing](#automated-testing)
-    4. [Browser Validation](#browser-validation)
-    5. [User Testing](#user-testing)
+   1. [Testing User Stories](#testing-user-stories)
+   2. [Manual Testing](#manual-testing)
+   3. [Automated Testing](#automated-testing)
+   4. [Browser Validation](#browser-validation)
+   5. [User Testing](#user-testing)
 9. [Deployment](#deployment)
-    1. [Download Code](#download-code)
-    2. [GitHub Pages Deployment Procedure](#github-pages-deployment-procedure)
+   1. [Download Code](#download-code)
+   2. [GitHub Pages Deployment Procedure](#github-pages-deployment-procedure)
 10. [Credits and Acknowledgements](#credits-and-acknowledgements)
     1. [Text](#text)
     2. [Images](#images-1)
     3. [Code](#code)
-    3. [Acknowledgements](#acknowledgements)
+    4. [Acknowledgements](#acknowledgements)
 
 ## Introduction
+
 This website serves as a tool for employees of The Co-op - where a user can find help understanding their pay, calculating their pay, and solving any potential issues with their income.
 
 I often hear a problem from many employees: the information they require is scattered over too many services and sources. Co-op Your Pay brings the related information into one interactive, mobile-friendly destination.
@@ -52,20 +53,25 @@ Co-op Your Pay is my second milestone project required to complete my Diploma in
 [Back to top 🔺](#co-op-your-pay)
 
 ## The User Experience
+
 The ideal user for this website is:
+
 - A new co-op employee.
 - A current employee.
 
 ### User Goals
+
 **New employee goals:**
 
 As a new employee:
+
 - I want to quickly navigate to what I need.
 - I want the information to be clear, relevant and accurate.
 
 **Current employee goals:**
 
 As a current employee:
+
 - I want help with the problems I have with my pay.
 - I want to know when payday is.
 - I want help with keeping track and calculating my pay.
@@ -73,21 +79,26 @@ As a current employee:
 [Back to top 🔺](#co-op-your-pay)
 
 ## Development Planning
+
 To create an interactive website that allows users to learn more about their pay and help them understand and calculate what they will receive.
 
 ### Strategy
+
 The strategy will include all the user needs and my objectives. The website will target the following audience:
 
 **Roles:**
+
 - New employees.
 - Current employees.
 
 **Personality:**
+
 - Employees seeking further information.
 - Curious forward-thinking employees.
 - Employees who track and value pay.
 
 The website needs to enable users to:
+
 - Find out about payday.
 - Learn more about their payslip.
 - Understand what the different deductions and payments mean.
@@ -96,120 +107,135 @@ The website needs to enable users to:
 
 Taking the above into account, I created this chart to show what is essential and what is actually viable.
 
-| Feature | Importance | Viability | Notes |
-| ----------- | ----------- | ----------- | ----------- |
-| Payday Calculator | 5 | 5 | Ranked high in importance as this would be the necessary interactive element of the website. |
-| Deductions and paymenents explaination | 4 | 5 | Easy to add information - plain text. |
-| Payslip information | 3 | 5 | Easy to add information - plain text. |
-| User Quiz | 2 | 2 | Futher interactivity - more challenging to implement. |
-| Payday Countdown | 1 | 3 | Extended javascript fuctionality.
+| Feature                                | Importance | Viability | Notes                                                                                        |
+| -------------------------------------- | ---------- | --------- | -------------------------------------------------------------------------------------------- |
+| Payday Calculator                      | 5          | 5         | Ranked high in importance as this would be the necessary interactive element of the website. |
+| Deductions and paymenents explaination | 4          | 5         | Easy to add information - plain text.                                                        |
+| Payslip information                    | 3          | 5         | Easy to add information - plain text.                                                        |
+| User Quiz                              | 2          | 2         | Futher interactivity - more challenging to implement.                                        |
+| Payday Countdown                       | 1          | 3         | Extended javascript fuctionality.                                                            |
 
 ### Site Map
+
 With the information above, I came up with the website hierarchical structure. The site map below shows how employees would navigate around the website.
 
-![Site map](https://paulio11.github.io/project-2/documentation/site-map.png)
+![Site map](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/site-map.png)
 
 ### Wireframes
-[Balsamiq for Desktop](https://balsamiq.com/wireframes/) was used ahead of development to plan the basic skeleton of all pages. You can download my wireframes file [here](https://paulio11.github.io/project-2/documentation/wireframe.bmpr).
 
-![Website wireframes](https://paulio11.github.io/project-2/documentation/wireframe.jpg)
+[Balsamiq for Desktop](https://balsamiq.com/wireframes/) was used ahead of development to plan the basic skeleton of all pages. You can download my wireframes file [here](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/wireframe.bmpr).
+
+![Website wireframes](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/wireframe.jpg)
 
 [Back to top 🔺](#co-op-your-pay)
 
 ## Design
 
 ### Color Scheme
+
 The site uses a restrained and on-brand colour scheme. The design is professional and fits with existing Co-op employee websites. The idea is that one day it could be a part of it. I am demonstrating my ability to create a potential and seamless addition to what is currently available to employees. The few colours chosen are featured throughout the entire site, from the home page to each page after that - providing a cohesive experience for the user.
 
 #### Color Palette
-![Color Palette](https://paulio11.github.io/project-2/documentation/color-palette.png)
+
+![Color Palette](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/color-palette.png)
 
 ### Typography
+
 Fonts are imported from [Google Fonts](https://fonts.google.com/). The font used for all elements is [Roboto](https://fonts.google.com/specimen/Roboto). Roboto is a clear, versatile font. Simply increasing the font-weight creates enough contrast between titles and body text.
 
 ### Images
+
 A single image is used - the Co-op logo, shown on the home page and in the header of every other page.
 
 ### Lightweight Design
+
 The whole site is minimal and lightweight. A single font import keeps the required resources low. A single image ensures the combined filesizes remain small. Together they will enable more users and devices to use the website, even on a mobile connection.
 
 [Back to top 🔺](#co-op-your-pay)
 
 ## Features
+
 The Calculator, Understand, Problems, Quiz, and about pages have a consistent style. They are built from the ground up to be simple and responsive. Viewable on all screen sizes with a `min-width` of 300px.
 
 These pages contain the following common features:
 
 **Header**
+
 - An area at the top of each page containing the logo, a username and a button to open the navigation menu.
 - The icons for the user and menu are from [Font Awesome](https://fontawesome.com/).
 - Within the header, if the user clicks on "Hello Employee" a JavaScript prompt appears asking for the user's name. This will save the input in local storage and display on each future page visit. Just a little easter egg - local storage fun!
 
 **Sidebar**
+
 - Clicking the menu button in the header will open the navigation menu. Sliding in from the right of the screen using css translation. The button for the menu and the menu’s close button are controlled by javascript.
 - Links to all pages on the website. Communicated to the user by a `:hover` effect that changes the `background-colour` and the cursor to pointer.
-- The JavaScript used to make this work can be found in [sidebar.js](https://github.com/paulio11/project-2/blob/main/assets/js/sidebar.js).
+- The JavaScript used to make this work can be found in [sidebar.js](https://github.com/paulio11/P2-Co-op-Your-Pay/blob/main/assets/js/sidebar.js).
 
-![Sidebar Screenshot](https://paulio11.github.io/project-2/documentation/screenshot-sidebar.png)
+![Sidebar Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/screenshot-sidebar.png)
 
 **The Page Title**
+
 - A `<h1>` element.
 
 **Style**
+
 - All fonts, margins, padding and colours match throughout all pages.
 
 **Footer**
+
 - A footer at the bottom of each page containing the site title and author.
 - Placed at the bottom of the viewport using `display: flex;`, `flex-direction: column;`, and `flex-grow: 1;` on a container `<div>` that holds the page content above the `<footer>`.
 
 Neither the `<header>` nor `<footer>` are fixed to the top/bottom of the screen, as I believed it would have taken up too much screen space - especially on a smaller device. To remedy the navigation issues caused on the taller home page, I added a simple javascript scroll back to the top button. The javascript code for this is in the sidebar.js file, as it is loaded on every page.
 
 **Scrolling**
+
 - On longer pages (calculator.html, understand.html and problems.html) the css rule `scroll-behavior: smooth;` allows the user to better understand where they are navigating to when using links within the page.
-- A *back to top* button appears when scrolling below the header to further assist navigation. The JavaScript code that makes this work can be seen in the file [top.js](https://github.com/paulio11/project-2/blob/main/assets/js/top.js).
+- A _back to top_ button appears when scrolling below the header to further assist navigation. The JavaScript code that makes this work can be seen in the file [top.js](https://github.com/paulio11/P2-Co-op-Your-Pay/blob/main/assets/js/top.js).
 
-![Back to Top Button Screenshot](https://paulio11.github.io/project-2/documentation/screenshot-topbutton.png)
+![Back to Top Button Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/screenshot-topbutton.png)
 
-**[Home Page](https://paulio11.github.io/project-2)**
+**[Home Page](https://paulio11.github.io/P2-Co-op-Your-Pay)**
 
 A simple landing page is all that is needed for a visiting user: the Co-op logo, website title, and a small sentence describing the purpose of the website. Below is the main navigation menu, a copy of what is in the sidebar on other pages.
 
-![Home Page Screenshot](https://paulio11.github.io/project-2/documentation/screenshot-index.png)
+![Home Page Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/screenshot-index.png)
 
-**[Payday Calculator](https://paulio11.github.io/project-2/calculator.html)**
+**[Payday Calculator](https://paulio11.github.io/P2-Co-op-Your-Pay/calculator.html)**
 
 The main interactive part of the whole website. This page consists of:
+
 - User instructions.
-- A link to fill the form with data - useful for testing. This would not be there in a final shipping product. The link calls the `fillForm()` function in [calculator.js](https://github.com/paulio11/project-2/blob/main/assets/js/calculator.js).
+- A link to fill the form with data - useful for testing. This would not be there in a final shipping product. The link calls the `fillForm()` function in [calculator.js](https://github.com/paulio11/P2-Co-op-Your-Pay/blob/main/assets/js/calculator.js).
 - Three user input sections:
-    - **About You** - questions about the employee.
-    - **About This Period** - questions about the current pay period. The dropdown box populates the calendar with the correct dates. An event listener calls the `populateCalendar()` function whenever this dropdown menu value is changed by the user.
-    - **Hours You Have Worked** - Four tables, one for each week, where the user can input how many hours they have worked this period. Each week is calculated separately because of how overtime is computed.
+  - **About You** - questions about the employee.
+  - **About This Period** - questions about the current pay period. The dropdown box populates the calendar with the correct dates. An event listener calls the `populateCalendar()` function whenever this dropdown menu value is changed by the user.
+  - **Hours You Have Worked** - Four tables, one for each week, where the user can input how many hours they have worked this period. Each week is calculated separately because of how overtime is computed.
 - A reset button which clears the form.
 - A calculate pay button calls the `handeSubmit()` functions. This shows the results below.
 - Calculator Results. Shown once the user fills out the form and submits. This contains several `<span>` elements that are filled by calculator.js.
 
-![Payday Calculator Screenshot](https://paulio11.github.io/project-2/documentation/screenshot-calculator.png)
+![Payday Calculator Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/screenshot-calculator.png)
 
-**[Understand Your Pay](https://paulio11.github.io/project-2/understand.html)** and **[Problems With Your Pay](https://paulio11.github.io/project-2/problems.html)**
+**[Understand Your Pay](https://paulio11.github.io/P2-Co-op-Your-Pay/understand.html)** and **[Problems With Your Pay](https://paulio11.github.io/P2-Co-op-Your-Pay/problems.html)**
 
-Both the *Understand Your Pay* and *Problems With Your Pay* pages start with page contents. An unordered list with a left border to connect them stylistically. Every list item links to a section within each page.
+Both the _Understand Your Pay_ and _Problems With Your Pay_ pages start with page contents. An unordered list with a left border to connect them stylistically. Every list item links to a section within each page.
 
 Below is a simple display of information. Each bit of information or frequently asked question is in its own `<div>` container so it can be navigated to via the page contents and styled to stand apart from each other.
 
-At the top of the *Understand Your Pay* page is a countdown to the next payday. This is is the output of an if statement comparing the current date with a list of paydays from an array within [payday.js](https://github.com/paulio11/project-2/blob/main/assets/js/payday.js).
+At the top of the _Understand Your Pay_ page is a countdown to the next payday. This is is the output of an if statement comparing the current date with a list of paydays from an array within [payday.js](https://github.com/paulio11/P2-Co-op-Your-Pay/blob/main/assets/js/payday.js).
 
-![Understand Your Pay Screenshot](https://paulio11.github.io/project-2/documentation/screenshot-understand.png)
+![Understand Your Pay Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/screenshot-understand.png)
 
-![Problems With Your Pay Screenshot](https://paulio11.github.io/project-2/documentation/screenshot-problems.png)
+![Problems With Your Pay Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/screenshot-problems.png)
 
 **[Quiz](https://paulio11.github.io/project2/quiz.html)**
 
-Most of the content on this page is generated by JavaScript in [quiz.js](https://github.com/paulio11/project-2/blob/main/assets/js/quiz.js) and [questions.js](https://github.com/paulio11/project-2/blob/main/assets/js/questions.js).
+Most of the content on this page is generated by JavaScript in [quiz.js](https://github.com/paulio11/P2-Co-op-Your-Pay/blob/main/assets/js/quiz.js) and [questions.js](https://github.com/paulio11/P2-Co-op-Your-Pay/blob/main/assets/js/questions.js).
 
-The instruction box uses the same styles as the information on the *Understand Your Pay* and *Problems With Your Pay* pages. All content below is created using `document.createElement` within the javascript code. 
+The instruction box uses the same styles as the information on the _Understand Your Pay_ and _Problems With Your Pay_ pages. All content below is created using `document.createElement` within the javascript code.
 
-The innerText of the created elements comes from reading the value of the (question) `number` variable to get the question text. A `for` loop creates multiple elements with `click` event listeners to show the multiple choice answers. Styles are applied when the choices are created, giving them a `:hover` style. When an option is clicked, the hover style is removed and then the relevant style is applied, whether the selected answer was correct or incorrect. Additionally, the click event displays a continue button, either functioning as the *Next Question*, or *Check My Score* buttons based on the progress through the quiz defined by `questions.length`. This enables more questions to be added beyond what is currently available, and the quiz will still function correctly.
+The innerText of the created elements comes from reading the value of the (question) `number` variable to get the question text. A `for` loop creates multiple elements with `click` event listeners to show the multiple choice answers. Styles are applied when the choices are created, giving them a `:hover` style. When an option is clicked, the hover style is removed and then the relevant style is applied, whether the selected answer was correct or incorrect. Additionally, the click event displays a continue button, either functioning as the _Next Question_, or _Check My Score_ buttons based on the progress through the quiz defined by `questions.length`. This enables more questions to be added beyond what is currently available, and the quiz will still function correctly.
 
 <details>
   <summary>Quiz Answers</summary>
@@ -224,25 +250,26 @@ The innerText of the created elements comes from reading the value of the (quest
   </ol>
 </details>
 
-![Quiz Screenshot](https://paulio11.github.io/project-2/documentation/screenshot-quiz.png)
+![Quiz Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/screenshot-quiz.png)
 
-**[About](https://paulio11.github.io/project-2/about.html)**
+**[About](https://paulio11.github.io/P2-Co-op-Your-Pay/about.html)**
 
 Using the same `<div class="box">` for the information presented in understand.html and problems.html to display a simple about this website box.
 
-![About Screenshot](https://paulio11.github.io/project-2/documentation/screenshot-about.png)
+![About Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/screenshot-about.png)
 
-**[Error 404](https://paulio11.github.io/project-2/404.html)** and **[Error 500](https://paulio11.github.io/project-2/500.html)**
+**[Error 404](https://paulio11.github.io/P2-Co-op-Your-Pay/404.html)** and **[Error 500](https://paulio11.github.io/P2-Co-op-Your-Pay/500.html)**
 
 The error pages are a copy of the design used for the home page. Containing the website logo, title, an explanation of the error and a Go Back button. The go back button jumps the user 1 page back in their history using JavaScript. The left arrow is from [Font Awesome](https://fontawesome.com/).
 
-![Error Page Screenshot](https://paulio11.github.io/project-2/documentation/screenshot-error.png)
+![Error Page Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/screenshot-error.png)
 
 ### Unimplemented Features
+
 There were just a few things I would have liked to have added.
 
 - **A more comprehensive source of information for employees** - I decided this wouldn’t be an effective use of my time, as it would just be more basic HTML and not display the required interactivity. Hopefully, you can see how you could quickly expand a website like this.
-- **Calculator Improvemenets** - An easier way for employees to use the calculator would be to use what they already know, i.e. the shift *Start Time* and *End Time*. This way, a user wouldn’t have to calculate the length of the shift and instead just input what time they started and finished work. Ultimately the javascript calculation would remain the same but would have required an extra step at the start - working out the difference in the two date (time) values and using that instead of a simple hours value.
+- **Calculator Improvemenets** - An easier way for employees to use the calculator would be to use what they already know, i.e. the shift _Start Time_ and _End Time_. This way, a user wouldn’t have to calculate the length of the shift and instead just input what time they started and finished work. Ultimately the javascript calculation would remain the same but would have required an extra step at the start - working out the difference in the two date (time) values and using that instead of a simple hours value.
 - **Payslip Information** - Another idea I wanted to implement was to explain the payslip in more detail - to expand the information available to the user further. A page dedicated to the payslip layout where a clickable, interactive example is shown. Clicking elements of the payslip would reveal more detailed information. I passed on this idea early on as it would have proven to be a relatively large amount of work to make something look like this clearly viewable on a smaller screen.
 
 [Back to top 🔺](#co-op-your-pay)
@@ -251,7 +278,7 @@ There were just a few things I would have liked to have added.
 
 Empty inputs on the calculator, specifically the hours worked when left blank, would cause errors while adding up the total hours worked. To fix this, I had to add an `if` statement into the `for` loop in the `addWeek()` function. This would skip the input if there was not a number (`isNaN`) and therefore bypass the issue.
 
-Initially, I wanted to use start and end times instead of hours worked for the calculator - see [Unimplemented Features](#unimplemented-features). This would have made it easier for the user but would have been more work for me. As I am new to JavaScript, I settled on using a single hours input per shift. Deeper study into JavaScript, the `Date` function and the ways you can compare two dates, shows this would have likely have been very possible. 
+Initially, I wanted to use start and end times instead of hours worked for the calculator - see [Unimplemented Features](#unimplemented-features). This would have made it easier for the user but would have been more work for me. As I am new to JavaScript, I settled on using a single hours input per shift. Deeper study into JavaScript, the `Date` function and the ways you can compare two dates, shows this would have likely have been very possible.
 
 Foolishly a lot of development time was spent on the username easter egg. Having just learnt about Local Storage, I wanted to try and implement something in this project. Turns out a `prompt`, even if cancelled or left blank, will have a variety of outcomes. To ensure I got what I wanted from it (and after much trial and error), an `if` statement was used to ignore all undesired outputs - `if (namePrompt === 'null' || namePrompt === null || namePrompt === '')`.
 
@@ -260,37 +287,39 @@ Foolishly a lot of development time was spent on the username easter egg. Having
 ## Technologies
 
 ### Main Languages Used
+
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [CSS3](https://en.wikipedia.org/wiki/CSS)
-    - You can see my stylesheet [here](https://github.com/paulio11/project-2/blob/main/assets/css/style.css).
+  - You can see my stylesheet [here](https://github.com/paulio11/P2-Co-op-Your-Pay/blob/main/assets/css/style.css).
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-    - You can see all my JavaScript files [here](https://github.com/paulio11/project-2/tree/main/assets/js).
+  - You can see all my JavaScript files [here](https://github.com/paulio11/P2-Co-op-Your-Pay/tree/main/assets/js).
 
 ### Other
+
 - [Google Fonts](https://fonts.google.com/)
-    - Fonts were imported from Google Fonts, see Typography section of readme above.
+  - Fonts were imported from Google Fonts, see Typography section of readme above.
 - [Font Awesome](https://fontawesome.com/)
-    - Icons used in my project taken from Font Awesome.
+  - Icons used in my project taken from Font Awesome.
 - [GitHub](https://github.com/)
-    - Used to store files, changes, and host the page.
+  - Used to store files, changes, and host the page.
 - [GitPod](https://www.gitpod.io/)
-    - Used to write, comment code, and commit to GitHub.
+  - Used to write, comment code, and commit to GitHub.
 - [Balsamiq](https://balsamiq.com/)
-    - Used to plan the layout of the pages before development.
+  - Used to plan the layout of the pages before development.
 - [Code Institute Student Template](https://github.com/Code-Institute-Org/gitpod-full-template)
-    - Used as the basis of the project, helped to set up GitPod workspace.
+  - Used as the basis of the project, helped to set up GitPod workspace.
 - [Affinity Photo](https://affinity.serif.com/en-gb/photo/)
-    - Used to edit images, resizing and optimizing them for use on a website.
+  - Used to edit images, resizing and optimizing them for use on a website.
 - [Am I Responsive](https://ui.dev/amiresponsive)
-    - Used to create the hero image at the top of this readme.
+  - Used to create the hero image at the top of this readme.
 - [Free Formatter](https://www.freeformatter.com/html-formatter.html)
-    - Recommended by my mentor and used to format my code before project submission.
+  - Recommended by my mentor and used to format my code before project submission.
 - [W3C Markup Validation Service](https://validator.w3.org)
-    - Used to validate HTML code.
+  - Used to validate HTML code.
 - [Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/)
-    - Used to validate CSS code.
+  - Used to validate CSS code.
 - [JSHint JavaScript Code Quality Tool](https://jshint.com)
-    - Used to validated JavaScript code.
+  - Used to validated JavaScript code.
 
 [Back to top 🔺](#co-op-your-pay)
 
@@ -299,139 +328,147 @@ Foolishly a lot of development time was spent on the username easter egg. Having
 ### Testing User Stories
 
 **New Employee/User Goals**
+
 - As a new employee, I want to quickly navigate to what I need.
-    - Website navigation is forefront; the first thing the user sees when visiting the site, and available throughout each page via the overlay and sidebar menu, making it always clear and fast to navigate.
+  - Website navigation is forefront; the first thing the user sees when visiting the site, and available throughout each page via the overlay and sidebar menu, making it always clear and fast to navigate.
 - As a new employee, I want the information to be clear, relevant and accurate.
-    - Whether the user wants to find out more information or troubleshoot a problem, they can do just that. 
-    - Clearly defined pages contain the information needed. Presented in separate sections and are navigable by page contents at the top of the page.
-    - Information is accurate and taken directly from official Co-op employee resources.
+  - Whether the user wants to find out more information or troubleshoot a problem, they can do just that.
+  - Clearly defined pages contain the information needed. Presented in separate sections and are navigable by page contents at the top of the page.
+  - Information is accurate and taken directly from official Co-op employee resources.
 
 **Current Employee/User Goals**
+
 - As a current employee, I want help with the problems I have with my pay.
-    - A whole page is dedicated to problems an employee might possibly have. Containing explanations and solutions.
+  - A whole page is dedicated to problems an employee might possibly have. Containing explanations and solutions.
 - As a current employee, I want to know when payday is.
-    - Using the JavaScript `Date` function and an array containing future paydays, the website can show the next payday and a countdown.
+  - Using the JavaScript `Date` function and an array containing future paydays, the website can show the next payday and a countdown.
 - As a current employee, I want help keeping track and calculating my pay.
-    - The payday calculator is the main interactive element of the website. Clear and simple to use. An employee can enter their details here and see their estimated pay.
+  - The payday calculator is the main interactive element of the website. Clear and simple to use. An employee can enter their details here and see their estimated pay.
 
 ### Manual Testing
 
 **Common Elements**
+
 <details>
     <summary>Navigation and hover effects</summary>
-    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-sidebar.gif">
+    <img src="https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-sidebar.gif">
 </details>
 <br>
 
-**[Home Page](https://paulio11.github.io/project-2)**
+**[Home Page](https://paulio11.github.io/P2-Co-op-Your-Pay)**
+
 <details>
     <summary>Navigation and hover effects</summary>
-    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-homepage.gif">
+    <img src="https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-homepage.gif">
 </details>
 <br>
 
-**[Payday Calculator](https://paulio11.github.io/project-2/calculator.html)**
+**[Payday Calculator](https://paulio11.github.io/P2-Co-op-Your-Pay/calculator.html)**
+
 <details>
     <summary>Form Validation</summary>
-    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-calc-validation.gif">
+    <img src="https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-calc-validation.gif">
 </details>
 <details>
     <summary>Reset Form Button</summary>
-    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-calc-reset.gif">
+    <img src="https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-calc-reset.gif">
 </details>
 <details>
     <summary>populateCalendar Function</summary>
-    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-calc-calendar.gif">
+    <img src="https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-calc-calendar.gif">
 </details>
 <details>
     <summary>calculatePay Function</summary>
-    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-calc-calculate.gif">
+    <img src="https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-calc-calculate.gif">
 </details>
 <details>
     <summary>Responsive layout</summary>
-    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-calc-responsive.gif">
+    <img src="https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-calc-responsive.gif">
 </details>
 <br>
 
-**[Understand Your Pay](https://paulio11.github.io/project-2/understand.html)**
+**[Understand Your Pay](https://paulio11.github.io/P2-Co-op-Your-Pay/understand.html)**
+
 <details>
     <summary>Page contents navigation</summary>
-    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-understand.gif">
+    <img src="https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-understand.gif">
 </details>
 <br>
 
-**[Problems With Your Pay](https://paulio11.github.io/project-2/problems.html)**
+**[Problems With Your Pay](https://paulio11.github.io/P2-Co-op-Your-Pay/problems.html)**
+
 <details>
     <summary>Page contents navigation</summary>
-    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-problems.gif">
+    <img src="https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-problems.gif">
 </details>
 <br>
 
-**[Quiz](https://paulio11.github.io/project-2/quiz.html)**
+**[Quiz](https://paulio11.github.io/P2-Co-op-Your-Pay/quiz.html)**
+
 <details>
     <summary>Starting the quiz</summary>
-    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-quiz-start.gif">
+    <img src="https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-quiz-start.gif">
 </details>
 <details>
     <summary>Failing the quiz</summary>
-    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-quiz-failing.gif">
+    <img src="https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-quiz-failing.gif">
 </details>
 <details>
     <summary>Restarting the quiz</summary>
-    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-quiz-restarting.gif">
+    <img src="https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-quiz-restarting.gif">
 </details>
 <details>
     <summary>Passing the quiz</summary>
-    <img src="https://paulio11.github.io/project-2/documentation/testing/testing-quiz-passing.gif">
+    <img src="https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-quiz-passing.gif">
 </details>
 <br>
 
 ### Automated Testing
 
-The [W3C Markup Validator](https://validator.w3.org/) service was used to validate my HTML and CSS code. The [JSHint JavaScript Code Quality Tool](https://jshint.com) was also used to validate my JavaScript code. 
+The [W3C Markup Validator](https://validator.w3.org/) service was used to validate my HTML and CSS code. The [JSHint JavaScript Code Quality Tool](https://jshint.com) was also used to validate my JavaScript code.
 
-| File | Automated Testing Result | Notes
-| ----------- | ----------- |----------- |
-| 404.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-404.png) | Pass |
-| 500.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-500.png) | Pass |
-| about.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-about.png) | Pass |
-| calculator.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-calculator.png) | Pass |
-| index.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-index.png) | Pass |
-| problems.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-problems.png) | Pass |
-| quiz.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-quiz.png) | Pass |
-| understand.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-understand.png) | Pass |
-| style.css | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-css.png) | Pass |
-| calculator.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-calculatorjs.png) | Pass |
-| payday.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-payday.png) | Pass |
-| questions.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-questions.png) | `questions` variable is used in `quiz.js` |
-| quiz.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-quizjs.png) | `questions` variable defined in `questions.js` |
-| sidebar.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-sidebar.png) | Pass |
-| top.js | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-top.png) | Pass |
+| File            | Automated Testing Result                                                                          | Notes                                          |
+| --------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| 404.html        | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-404.png)          | Pass                                           |
+| 500.html        | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-500.png)          | Pass                                           |
+| about.html      | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-about.png)        | Pass                                           |
+| calculator.html | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-calculator.png)   | Pass                                           |
+| index.html      | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-index.png)        | Pass                                           |
+| problems.html   | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-problems.png)     | Pass                                           |
+| quiz.html       | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-quiz.png)         | Pass                                           |
+| understand.html | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-understand.png)   | Pass                                           |
+| style.css       | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-css.png)          | Pass                                           |
+| calculator.js   | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-calculatorjs.png) | Pass                                           |
+| payday.js       | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-payday.png)       | Pass                                           |
+| questions.js    | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-questions.png)    | `questions` variable is used in `quiz.js`      |
+| quiz.js         | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-quizjs.png)       | `questions` variable defined in `questions.js` |
+| sidebar.js      | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-sidebar.png)      | Pass                                           |
+| top.js          | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-top.png)          | Pass                                           |
 
 Also included are the results of Lighthouse. Scoring 100 in every category on every page.
 
-| Page | Lighthouse Result|
-| ----------- | ----------- |
-| Error pages | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/lighthouse-error.png) |
-| index.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/lighthouse-index.png) |
-| understand.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/lighthouse-understand.png) |
-| problems.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/lighthouse-problems.png) |
-| quiz.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/lighthouse-quiz.png) |
-| calculator.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/lighthouse-calculator.png) |
-| about.html | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/lighthouse-about.png) |
+| Page            | Lighthouse Result                                                                                  |
+| --------------- | -------------------------------------------------------------------------------------------------- |
+| Error pages     | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/lighthouse-error.png)      |
+| index.html      | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/lighthouse-index.png)      |
+| understand.html | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/lighthouse-understand.png) |
+| problems.html   | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/lighthouse-problems.png)   |
+| quiz.html       | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/lighthouse-quiz.png)       |
+| calculator.html | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/lighthouse-calculator.png) |
+| about.html      | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/lighthouse-about.png)      |
 
 ### Browser Validation
 
-| Browser | Screenshot |
-| ----------- | ----------- |
-| Google Chrome | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-chrome.png) |
-| Microsoft Edge | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-edge.png) |
-| Safari | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-safari.png) |
-| Safari Mobile | [Screenshot](https://paulio11.github.io/project-2/documentation/testing/testing-safarimobile.jpeg) |
+| Browser        | Screenshot                                                                                         |
+| -------------- | -------------------------------------------------------------------------------------------------- |
+| Google Chrome  | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-chrome.png)        |
+| Microsoft Edge | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-edge.png)          |
+| Safari         | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-safari.png)        |
+| Safari Mobile  | [Screenshot](https://paulio11.github.io/P2-Co-op-Your-Pay/documentation/testing/testing-safarimobile.jpeg) |
 
 ### User Testing
 
-Many fellow Code Institute helped test the site during various stages of development. Nothing major was reported besides spelling and grammatical errors. 
+Many fellow Code Institute helped test the site during various stages of development. Nothing major was reported besides spelling and grammatical errors.
 
 My mentor [Oluwaseun Owonikoko](https://github.com/seunkoko) helped point out issues with the outputs of the username prompt when the user would either cancel out or hit okay with a blank input. Other numerous suggestions were made throughout the project, too many to remember.
 
@@ -439,18 +476,18 @@ My mentor [Oluwaseun Owonikoko](https://github.com/seunkoko) helped point out is
 
 ## Deployment
 
-Project written and developed in GitPod, which was then used to commit changes and push to GitHub. The site is hosted using GitHub Pages. 
+Project written and developed in GitPod, which was then used to commit changes and push to GitHub. The site is hosted using GitHub Pages.
 
 ### Download Code
 
-To download a copy of this project and all required assets click the green **Code** button above the file tree at the top. Then **Download ZIP**. Alternatively click [here](https://github.com/paulio11/project-2/archive/refs/heads/main.zip).
+To download a copy of this project and all required assets click the green **Code** button above the file tree at the top. Then **Download ZIP**. Alternatively click [here](https://github.com/paulio11/P2-Co-op-Your-Pay/archive/refs/heads/main.zip).
 
 ### GitHub Pages Deployment Procedure
 
 To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
 
 1. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").
-2. Locate this [GitHub Repository](https://github.com/paulio11/project-2 "Link to GitHub Repo").
+2. Locate this [GitHub Repository](https://github.com/paulio11/P2-Co-op-Your-Pay "Link to GitHub Repo").
 3. At the top of the repository, select Settings from the menu items.
 4. Scroll down the Settings page to the "Pages" section.
 5. Under "Source" click the drop-down menu labelled "None" and select "Main".
@@ -461,18 +498,21 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 
 [Back to top 🔺](#co-op-your-pay)
 
-## Credits and Acknowledgements 
+## Credits and Acknowledgements
 
 ### Text
+
 - Employee paydays taken from [Co-op Colleagues - See next paydays](https://colleagues.coop.co.uk/see-next-pay-days).
 - Problems with your pay text taken from [Co-op Colleagues - Problems with your pay](https://colleagues.coop.co.uk/problems-with-your-pay).
 - Understand your pay text taken from [Co-op Colleagues - Understand your payslip and pay deductions](https://colleagues.coop.co.uk/understand-your-payslip-and-pay-deductions).
 
 ### Images
+
 - Co-op logo taken from [Co-op Assets](https://www.co-operative.coop/media/assets).
 
 ### Code
-- Code for the [scroll to top button](https://github.com/paulio11/project-2/blob/main/assets/js/top.js) is based on a [How To tutorial at W3 Schools](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp).
+
+- Code for the [scroll to top button](https://github.com/paulio11/P2-Co-op-Your-Pay/blob/main/assets/js/top.js) is based on a [How To tutorial at W3 Schools](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp).
 - Lines 112 to 125 in `calculator.js` created with help from a friend Dan Oak, adjusted to suit my needs and to fix an oversight of his.
 
 ### Acknowledgements
